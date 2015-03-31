@@ -1,10 +1,6 @@
 discourse-persian
 ======================
 
-زبان فارسی برای دیسکورس 
-
-
-
 You need to modify your app.yml file to get it working. Find the section where after code hooks are listed:
 
 ```ruby
