@@ -11,7 +11,7 @@
 #   tx push -s
 #
 # Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
-#
+#Persian languages by http://discours.ir/t/1-0/33?u=admin
 # To validate this YAML file after you change it, please paste it into
 # http://yamllint.com/
 fa_IR:
@@ -55,6 +55,11 @@ fa_IR:
       body: 'مشکلاتی با زمینه های دنبال شده وجود دارد:'
     embed:
       load_from_remote: "خطایی در بارگذاری آن پست رخ داده است."
+  bulk_invite:
+    file_should_be_csv: "قالب پرونده‌ی بارگذاری شده باید csv و یا txt باشد."
+  backup:
+    backup_file_should_be_tar_gz: "پرونده‌ی پشتیبان باید یک فایل فشرده با پسوند tar.gz. باشد."
+    not_enough_space_on_disk: "فضای کافی برای بارگذاری این پشتیبان وجود ندارد."
   not_logged_in: "برای اینکار شما باید وارد شوید."
   not_found: "URL یا منبع درخواست شده یافت نشد."
   invalid_access: "شما اجازه مشاهده منبع درخواست شده را ندارید."
@@ -106,7 +111,6 @@ fa_IR:
   num_posts: "ارسال ها:"
   num_participants: "اشتراک در :"
   read_full_topic: "مشاهده متن کامل"
-  private_message_abbrev: "پ.خ"
   rss_description:
     latest: "آخرین ارسال ها"
     hot: "جستارهای داغ"
@@ -163,7 +167,7 @@ fa_IR:
   meta_category_name: "متا"
   staff_category_name: "کارکنان"
   category:
-    topic_prefix: "در رابطه با دسته بندی %{category} "
+    topic_prefix: "در رابطه با دسته بندی {category}% "
     cannot_delete:
       uncategorized: "بدون دسته بندی را نمی توان حذف کرد"
       has_subcategories: "این دسته بندی به دلیل داشتن زیردسته قابل پاک شدن نیست."
@@ -259,7 +263,6 @@ fa_IR:
       title: 'نامناسب'
       long_form: 'این مورد نامناسب دانسته شد.'
     notify_user:
-      title: 'پیام خصوصی {{username}}@'
       email_title: 'نوشته ی شما در "{title}%"'
       email_body: "%{link}\n\n%{message}"
     notify_moderators:
@@ -285,6 +288,10 @@ fa_IR:
     notify_moderators:
       title: "یک چیز دیگر"
       email_body: "%{link}\n\n%{message}"
+  unsubscribed:
+    title: 'اشتراک لغو شده'
+    description: "اشتراک شما لغو شد. دیگر با شما تماس نخواهیم گرفت!"
+    error: "خطا در لغو اشتراک"
   reports:
     visits:
       title: "بازدید کاربران"
@@ -324,23 +331,18 @@ fa_IR:
     user_to_user_private_messages:
       title: "کاربر به کاربر"
       xaxis: "روز"
-      yaxis: "تعداد پیام های خصوصی"
     system_private_messages:
       title: "سیستم"
       xaxis: "روز"
-      yaxis: "تعداد پیام های خصوصی"
     moderator_warning_private_messages:
       title: "هشدل مدیر"
       xaxis: "روز"
-      yaxis: "تعداد پیام های خصوصی"
     notify_moderators_private_messages:
       title: "اطلاعیه مدیران"
       xaxis: "روز"
-      yaxis: "تعداد پیام های خصوصی"
     notify_user_private_messages:
       title: "اطلاعیه کاربر"
       xaxis: "روز"
-      yaxis: "تعداد پیام های خصوصی"
     top_referrers:
       title: "رفتن به بالا"
       xaxis: "کاربر"
@@ -390,18 +392,82 @@ fa_IR:
     head:
       title: "HTML head"
   site_settings:
+    allow_moderators_to_create_categories: "اجازه دادن به مدیران برای ساخت دسته‌بندی‌های جدید"
+    min_password_length: "حداقل طول رمز عبور"
+    allow_uploaded_avatars: "اجازه دادن به کاربران برای بارگذاری آواتارهای سفارشی"
+    enable_names: "نام کامل کاربران را در نمایه، کارت کاربری و ایمیل‌هایشان نمایش بده. قابلیت پنهان کردن نام کامل را در هرجایی غیرفعال کن."
     enable_emoji: "فعالسازی ایموجی"
     emoji_set: "می‌خواهید ایموجی شما چطور باشد؟"
   search:
     types:
       category: 'دسته‌ها'
       user: 'کاربران'
+  original_poster: "نویسنده اصلی"
+  move_posts:
+    new_topic_moderator_post:
+      other: "من {count}% تا از نوشته‌ها را به این موضوع جدید انتقال دادم: {topic_link}%"
+    existing_topic_moderator_post:
+      other: "من {count}% تا از نوشته‌ها را به این موضوع انتقال دادم: {topic_link}%"
+  change_owner:
+    post_revision_text: "حق مالکیت از کاربر {old_user}% به کاربر {new_user}% منتقل شد"
   emoji:
     errors:
       name_already_exists: "متأسفیم، در حال حاضر نام '{name}%' توسط ایموجی دیگری استفاده می‌شود."
       error_while_storing_emoji: "متأسفیم، در هنگام ذخیره‌سازی ایموجی خطایی رخ داده است."
+  topic_statuses:
+    closed_disabled: "موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
+    autoclosed_disabled: "این موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
+    autoclosed_disabled_lastpost: "این موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
   login:
-    incorrect_username_email_or_password: "نام کاربری، رایانامه یا گذرواژهٔ نادرست"
+    incorrect_username_email_or_password: "نام کاربری، ایمیل یا رمز عبور نادرست"
+    active: "حساب کاربریتان فعال شده و آماده‌ی استفاده است."
+    not_allowed_from_ip_address: "شما نمی‌توانید با این آی‌پی آدرس وارد حساب کاربری {username}% شوید."
+    admin_not_allowed_from_ip_address: "شما نمی تواند با این اپی آدرس به عنوان مدیر وارد سیستم شوید."
+    suspended: "شما تا تاریخ {date}% نمی‌توانید وارید سیستم شوید."
+    suspended_with_reason: "شما تا تاریخ {date}% نمی‌توانید وارید سیستم شوید. علت مسدود شدن حسابتان: {reason}%"
+    errors: "{errors}%"
+    new_registrations_disabled: "ثبت حساب‌ کاربری جدید اکنون امکان‌پذیر نیست."
+    password_too_long: "رمزهای عبور به 200 کاراکتر محدود شده‌اند."
+  invite_password_instructions:
+    subject_template: "تنظیم رمز عبور برای حساب کاربری {site_name}%"
+  test_mailer:
+    text_body_template: |
+      This is a test email from
+
+      [**%{base_url}**][0]
+
+      Email deliverability is complicated. Here are a few important things you should check first:
+
+      - Be *sure* to set the `notification email` from: address correctly in your site settings. **The domain specified in the "from" address of the emails you send is the domain your email will be validated against**.
+
+      - Know how to view the raw source of the email in your mail client, so you can examine email headers for important clues. in Gmail, it is the "show original" option in the drop-down menu at the top right of each mail.
+
+      - **IMPORTANT:** Does your ISP have a reverse DNS record entered to associate the domain names and IP addresses you send mail from? [Test your Reverse PTR record][2] here. If your ISP does not enter the proper reverse DNS pointer record, it's very unlikely any of your email will be delivered.
+
+      - Is your domain's [SPF record][8] correct? [Test your SPF record][1] here. Note that TXT is the correct official record type for SPF.
+
+      - Is your domain's [DKIM record][3] correct? This will significantly improve email deliverability. [Test your DKIM record][7] here.
+
+      - If you run your own mail server, check to make sure the IPs of your mail server are [not on any email blacklists][4]. Also verify that it is definitely sending a fully-qualified hostname that resolves in DNS in its HELO message. If not, this will cause your email to be rejected by many mail services.
+
+      (The *easy* way is to create a free account on [Mandrill][md] or [Mailgun][mg] or [Mailjet][mj], which have free generous free mailing plans and will be fine for small communities. You'll still need to set up the SPF and DKIM records in your DNS, though!)
+
+      We hope you received this email deliverability test OK!
+
+      Good luck,
+
+      Your friends at [Discourse](http://www.discourse.org)
+
+      [0]: %{base_url}
+      [1]: http://www.kitterman.com/spf/validate.html
+      [2]: http://mxtoolbox.com/ReverseLookup.aspx
+      [3]: http://www.dkim.org/
+      [4]: http://whatismyipaddress.com/blacklist-check
+      [7]: http://dkimcore.org/tools/dkimrecordcheck.html
+      [8]: http://www.openspf.org/SPF_Record_Syntax
+      [md]: http://mandrill.com
+      [mg]: http://www.mailgun.com/
+      [mj]: https://www.mailjet.com/pricing
   flags_reminder:
     subject_template:
       other: "%{count} نشانه ها منتظر استفاده"
@@ -413,8 +479,22 @@ fa_IR:
         other: "%{count} کاربران منتظر تایید"
   user_notifications:
     previous_discussion: "پاسخ‌های قبلی"
+    unsubscribe:
+      title: "لغو اشتراک"
+      description: "آیا تمایلی به دریافت این ایمیل‌ها ندارید؟ مشکلی نیست! اینجا را کلیک کنید تا اشتراک آن هم‌اکنون حذف شود."
+    visit_link_to_respond: "برای پاسخگویی، لینک {base_url}%{url}% را در مرورگر خود مشاهده کنید."
     posted_by: "نوشته شده توسط {username}% در تاریخ {post_date}%"
+    user_replied:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: |
+        {message}%
+
+        {context}%
+
+        ---
+        {respond_instructions}%
     digest:
+      new_activity: "فعالیت جدید در موضوعات و نوشته‌های شما:"
       top_topics: "نوشته‌های محبوب"
       other_new_topics: "موضوعات محبوب"
       click_here: "اینجا کلیک کنید"
@@ -423,6 +503,15 @@ fa_IR:
         other: "%{count} نوشته ها"
   page_not_found:
     popular_topics: "محبوب"
+    see_more: "بیشتر"
+    search_google: "گوگل"
+  deleted: 'حذف شد'
+  upload:
+    unauthorized: "متأسفم، پرونده‌ای که می‌خواهید بارگذاری کنید معتبر نیست ( پسوندهای معتبر عبارتند از: {authorized_extensions}% )."
+    attachments:
+      too_large: "متأسفم، پرونده‌ای که می‌خواهید بارگذاری کنید بسیار بزرگ است! ( حداکثر حجم پرونده باید {max_size_kb}% کیلوبایت باشد. )"
+    images:
+      unknown_image_type: "متأسفم، اما به نظر می‌رسد پرونده‌ای که می‌خواهید بارگذاری کنید، از نوع «تصویر» نیست."
   color_schemes:
     base_theme_name: "پایه"
   about: "درباره"
@@ -671,6 +760,88 @@ fa_IR:
       Originally adapted from the [WordPress Terms of Service](http://en.wordpress.com/tos/).
   privacy_topic:
     title: "سیاست حفظ حریم خصوصی"
+    body: |
+      <a name="collect"></a>
+
+      ## [What information do we collect?](#collect)
+
+      We collect information from you when you register on our site and gather data when you participate in the forum by reading, writing, and evaluating the content shared here.
+
+      When registering on our site, you may be asked to enter your name and e-mail address. You may, however, visit our site without registering. Your e-mail address will be verified by an email containing a unique link. If that link is visited, we know that you control the e-mail address.
+
+      When registered and posting, we record the IP address that the post originated from. We also may retain server logs which include the IP address of every request to our server.
+
+      <a name="use"></a>
+
+      ## [What do we use your information for?](#use)
+
+      Any of the information we collect from you may be used in one of the following ways:
+
+      *   To personalize your experience &mdash; your information helps us to better respond to your individual needs.
+      *   To improve our site &mdash; we continually strive to improve our site offerings based on the information and feedback we receive from you.
+      *   To improve customer service &mdash; your information helps us to more effectively respond to your customer service requests and support needs.
+      *   To send periodic emails &mdash; The email address you provide may be used to send you information, notifications that you request about changes to topics or in response to your user name, respond to inquiries, and/or other requests or questions.
+
+      <a name="protect"></a>
+
+      ## [How do we protect your information?](#protect)
+
+      We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or access your personal information.
+
+      <a name="data-retention"></a>
+
+      ## [What is your data retention policy?](#data-retention)
+
+      We will make a good faith effort to:
+
+      *   Retain server logs containing the IP address of all requests to this server no more than 90 days.
+      *   Retain the IP addresses associated with registered users and their posts no more than 5 years.
+
+      <a name="cookies"></a>
+
+      ## [Do we use cookies?](#cookies)
+
+      Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow). These cookies enable the site to recognize your browser and, if you have a registered account, associate it with your registered account.
+
+      We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future. We may contract with third-party service providers to assist us in better understanding our site visitors. These service providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business.
+
+      <a name="disclose"></a>
+
+      ## [Do we disclose any information to outside parties?](#disclose)
+
+      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+
+      <a name="third-party"></a>
+
+      ## [Third party links](#third-party)
+
+      Occasionally, at our discretion, we may include or offer third party products or services on our site. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+
+      <a name="coppa"></a>
+
+      ## [Children's Online Privacy Protection Act Compliance](#coppa)
+
+      Our site, products and services are all directed to people who are at least 13 years old or older. If this server is in the USA, and you are under the age of 13, per the requirements of COPPA ([Children's Online Privacy Protection Act](http://en.wikipedia.org/wiki/Children)), do not use this site.
+
+      <a name="online"></a>
+
+      ## [Online Privacy Policy Only](#online)
+
+      This online privacy policy applies only to information collected through our site and not to information collected offline.
+
+      <a name="consent"></a>
+
+      ## [Your Consent](#consent)
+
+      By using our site, you consent to our web site privacy policy.
+
+      <a name="changes"></a>
+
+      ## [Changes to our Privacy Policy](#changes)
+
+      If we decide to change our privacy policy, we will post those changes on this page.
+
+      This document is CC-BY-SA. It was last updated May 31, 2013.
   static:
     search_help: |
       <h2>Tips</h2>
@@ -694,9 +865,3 @@ fa_IR:
       <p>
         <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
       </p>
-  badges:
-    long_descriptions:
-      first_flag: |
-        Flagging is critical to the health of your community. If you notice any posts that require moderator attention please
-        do not hesitate to flag. You may also use the flagging dialog to send <b>private messages</b> to users once you reach
-        trust level 1.
