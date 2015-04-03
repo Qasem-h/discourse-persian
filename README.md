@@ -30,3 +30,10 @@ hooks:
           - cp -rT discourse-persian/ /var/www/discourse/
           - rm -rf discourse-persian
 ```
+cd /var/discourse
+./launcher ssh app
+./reload_persian.sh
+exit
+./launcher restart app
+
+
