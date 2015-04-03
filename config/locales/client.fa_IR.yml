@@ -11,7 +11,7 @@
 #   tx push -s
 #
 # Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
-#
+# Persian languages by http://discours.ir/t/1-0/33?u=admin
 # To validate this YAML file after you change it, please paste it into
 # http://yamllint.com/
 fa_IR:
@@ -182,29 +182,36 @@ fa_IR:
         search: "جستجو برای یک جستار از روی نام، نشانی (url) یا شناسه (id)"
         placeholder: "سرنویس جستار را اینجا بنویسید"
     user_action:
-      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> در <a href='{{topicUrl}}'>این جستار</a> دیدگاه گذاشت"
+      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> posted <a href='{{topicUrl}}'>the topic</a>"
       you_posted_topic: "<a href='{{userUrl}}'>شما</a> در <a href='{{topicUrl}}'>این جستار</a> دیدگاه گذاشتید"
-      user_replied_to_post: "<a href='{{userUrl}}'>{{user}}</a> به <a href='{{postUrl}}'>{{post_number}}</a> پاسخ داد"
-      you_replied_to_post: "<a href='{{userUrl}}'>شما</a> به <a href='{{postUrl}}'>{{post_number}}</a> پاسخ دادید"
-      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a> به <a href='{{topicUrl}}'>این جستار</a> پاسخ داد"
-      you_replied_to_topic: "<a href='{{userUrl}}'>شما</a> به <a href='{{topicUrl}}'>the topic</a> پاسخ دادید"
-      user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a> از <a href='{{user2Url}}'>{{another_user}}</a> نام برد"
-      user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a> از <a href='{{user2Url}}'>شما</a> نام برد"
-      you_mentioned_user: "<a href='{{user1Url}}'>شما</a> از <a href='{{user2Url}}'>{{another_user}}</a> نام بردید"
-      posted_by_user: "<a href='{{userUrl}}'>{{user}}</a> فرستاد"
-      posted_by_you: "<a href='{{userUrl}}'>شما</a> فرستادید"
-      sent_by_user: "فرستنده: <a href='{{userUrl}}'>{{user}}</a>"
-      sent_by_you: "فرستنده: <a href='{{userUrl}}'>شما</a>"
+      user_replied_to_post: "<a href='{{userUrl}}'>{{user}}</a> replied to <a href='{{postUrl}}'>{{post_number}}</a>"
+      you_replied_to_post: "<a href='{{userUrl}}'>You</a> replied to <a href='{{postUrl}}'>{{post_number}}</a>"
+      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a> replied to <a href='{{topicUrl}}'>the topic</a>"
+      you_replied_to_topic: "<a href='{{userUrl}}'>You</a> replied to <a href='{{topicUrl}}'>the topic</a>"
+      user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a> mentioned <a href='{{user2Url}}'>{{another_user}}</a>"
+      user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a> mentioned <a href='{{user2Url}}'>you</a>"
+      you_mentioned_user: "<a href='{{user1Url}}'>You</a> mentioned <a href='{{user2Url}}'>{{another_user}}</a>"
+      posted_by_user: "Posted by <a href='{{userUrl}}'>{{user}}</a>"
+      posted_by_you: "Posted by <a href='{{userUrl}}'>you</a>"
+      sent_by_user: "Sent by <a href='{{userUrl}}'>{{user}}</a>"
+      sent_by_you: "Sent by <a href='{{userUrl}}'>you</a>"
     directory:
-      filter_name: "فیلتر  بر اساس نام کاربری"
+      filter_name: "فیلتر بر اساس نام کاربری"
       title: "کاربران"
       likes_given: "داده"
       likes_received: "رسید"
-      topics_entered: "مباحث وارد شده"
+      topics_entered: "وارد شده"
+      topics_entered_long: "موضوعات وارد شده"
       time_read: "زمان خوانده‌شده"
       topic_count: "مباحث"
+      topic_count_long: "موضوعات ساخته شده"
       post_count: "پاسخ ها"
+      post_count_long: "پاسخ داده شده ها"
       no_results: "نتیجه ای یافت نشد."
+      days_visited: "بازدید ها"
+      days_visited_long: "بازدید روزانه"
+      posts_read: "خواندن"
+      posts_read_long: "خواندن نوشته ها"
       total_rows:
         other: "%{count} کاربران"
     groups:
@@ -225,8 +232,8 @@ fa_IR:
       '2': "پسندهای دریافتی"
       '3': "نشانک‌ها"
       '4': "جُستارها"
-      '5': "دیدگاه‌ها"
-      '6': "پاسخ‌ها"
+      '5': "پاسخ ها"
+      '6': "واکنش"
       '7': "اشاره‌ها"
       '9': "نقل‌قول‌ها"
       '10': "ستاره‌دار"
@@ -270,8 +277,8 @@ fa_IR:
       mute: "بی صدا"
       edit: "ویرایش تنظیمات"
       download_archive: "بار گیری نوشته های من ."
-      new_private_message: "پیام خصوصی جدید"
-      private_message: "پیام خصوصی"
+      new_private_message: "پیغام های جدید"
+      private_message: "پیغام"
       private_messages: "پیام‌ها"
       activity_stream: "فعالیت"
       preferences: "تنظیمات"
@@ -361,6 +368,10 @@ fa_IR:
         ok: "رایانامه‌ی تایید را برایتان می‌فرستیم"
         invalid: "لطفا یک آدرس رایانامه معتبر وارد کنید"
         authenticated: "ایمیل شما تصدیق شد توسط {{provider}}"
+        frequency:
+          zero: "ما برای شما سریعا ایمیلی می فرستیم در صورتی که چیزهای فرستاده شده در ایمیل را نخوانده باشید"
+          one: "ما در صورتی به شما ایمیل می زنیم که شما در لحظه آخر ندیده باشیم"
+          other: "ما در صورتی به شما ایمیل می زنیم که شما را در آخرین دقیقه {{شمار}}  ندیده باشیم "
       name:
         title: "نام"
         instructions: "نام کامل (اختیاری)"
@@ -369,14 +380,19 @@ fa_IR:
       username:
         title: "نام کاربری"
         instructions: "منحصر به فرد،بدون فاصله،کوتاه"
+        short_instructions: "می توانید به کاربران دیگر اشاره کنید با@{{username}}"
         available: "نام کاربری انتخابی برای شما در دسترس است"
+        global_match: "ایمیل منطبق نام کاربری ثبت شد."
         global_mismatch: "از پیش ثبت شده. {{suggestion}} چطور است؟"
         not_available: "فراهم نیست. {{suggestion}} چطور است؟"
         too_short: "نام کاربری انتخابی شما خیلی کوتاه است"
         too_long: "نام کاربری انتخابی شما بسیار بلند است"
         checking: "بررسی فراهمی نام‌کاربری..."
+        enter_email: 'نام کاربری پیدا شد; ایمیل منطبق را وارد کن'
+        prefilled: "ایمیل منطبق لت با این نام کاربری ثبت شده "
       locale:
-        title: "زبان محیط کاربری"
+        title: "زبان رابط کاربر"
+        instructions: "زبان رابط کاربری. با تازه کردن صفحه تغییر خواهد کرد."
         default: "(پیش‌فرض)"
       password_confirmation:
         title: "رمز عبور را مجدد وارد نمایید"
@@ -386,13 +402,18 @@ fa_IR:
       created: "پیوست"
       log_out: "خروج"
       location: "موقعیت"
+      card_badge:
+        title: "کارت مدال کاربر"
       website: "تارنما"
       email_settings: "رایانامه"
       email_digests:
+        title: "هنگامی که به سایت سر نمی‌زنم، گزارش کوتاهی از رویدادهای تازه را برایم ایمیل کن:"
         daily: "روزانه"
         every_three_days: "هر سه روز"
         weekly: "هفتگی"
         every_two_weeks: "هر دو هفته "
+      email_direct: "برای من ایمیلی بفرست  هنگامی که کاربری گفتهٔ من را نقل‌قول می‌کند، روی دیدگاه من پاسخی می‌فرستد، یا به @نام‌کاربری من اشاره می‌کند"
+      email_always: "برای من ایمیل آگاه سازی نفرست هنگامی که در سایت فعال هستم"
       other_settings: "موارد دیگر"
       categories_settings: "دسته‌ها"
       auto_track_options:
@@ -429,6 +450,7 @@ fa_IR:
         too_short: "گذرواژه‌تان خیلی کوتاه است"
         common: "گذرواژهٔ خیلی ساده‌ای است"
         ok: "گذرواژهٔ خوبی است."
+        instructions: "در آخرین %{count} کاراکتر"
       associated_accounts: "ورود ها"
       ip_address:
         title: "آخرین نشانی IP"
@@ -443,10 +465,10 @@ fa_IR:
       stream:
         posted_by: "فرستنده:"
         sent_by: "فرستنده:"
-        private_message: "پیام خصوصی"
         the_topic: "این جستار"
     loading: "بارگذاری"
     errors:
+      prev_page: "هنگام تلاش برای بارگزاری"
       reasons:
         network: "خطای شبکه"
         server: "ارور سرور"
@@ -454,13 +476,16 @@ fa_IR:
         unknown: "خطا"
       desc:
         network: "ارتباط اینترنتی‌تان را بررسی کنید."
+        network_fixed: "به نظر می رسد اون برگشت."
         server: "کد ارور : {{status}}"
+        forbidden: "شما اجازه دیدن آن را ندارید."
         unknown: "اشتباهی روی داد."
       buttons:
         back: "برگشت"
         again: "تلاش دوباره"
         fixed: "بارگذاری برگه"
     close: "بستن"
+    assets_changed_confirm: "به نظر می رسد به روز رانی شده است،بارگزاری مجدد برای آخرین نسخه ؟"
     logout: "شما از سایت خارج شده اید"
     refresh: "تازه کردن"
     learn_more: "بیشتر بدانید..."
@@ -484,7 +509,7 @@ fa_IR:
       enable: "مخفی کردن نوشته های حذف شده"
       disable: "نشان دادن نوشته های حذف شده"
     private_message_info:
-      title: "پیام خصوصی"
+      title: "پیغام"
       invite: "فراخواندن دیگران..."
     email: 'رایانامه'
     username: 'نام کاربری'
@@ -567,7 +592,7 @@ fa_IR:
       reply: "پاسخ"
       cancel: "لغو کردن"
       create_topic: "ایجاد موضوع"
-      create_pm: "پیغام خصوصی"
+      create_pm: "پیغام"
       title: "یا Ctrl+Enter را بفشارید"
       users_placeholder: "افزودن یک کاربر"
       title_placeholder: "در یک جملهٔ‌کوتاه، این جستار در چه موردی است؟"
@@ -611,10 +636,8 @@ fa_IR:
           units: "(# از ساعت ها)"
           examples: 'لطفا عدد ساعت را وارد نمایید (24).'
     notifications:
-      title: "آگاه‌سازی‌های اشاره‌های به @نام‌کاربری، پاسخ‌ها به دیدگاه‌ها و جستارهایتان، پیام‌های خصوصی و..."
       more: "دیدن آگاه‌سازی‌های پیشن"
       total_flagged: "همهٔ دیدگاه‌های پرچم خورده"
-      mentioned: "<i title='mentioned' class='icon'>@</i><p><span>{{username}}</span> {{description}}</p>"
       quoted: "<i title='quoted' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
       replied: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
       posted: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -644,7 +667,7 @@ fa_IR:
         user: "جستجوی دیدگاه‌های @{{username}}"
         category: "جستجوی دستهٔ «{{category}}»"
         topic: "جستجوی این جستار"
-        private_messages: "جستجوی پیغام خصوصی"
+        private_messages: "جستجوی پیغام"
     site_map: "به فهرست جستار یا دسته‌ای دیگر بروید"
     go_back: 'برگردید'
     current_user: 'به نمایه‌تان بروید'
@@ -653,8 +676,12 @@ fa_IR:
         delete: "حذف موضوعات"
         dismiss_posts: "بستن نوشته ها"
         dismiss_topics: "بستن موضوعات"
+        dismiss_topics_tooltip: "نشان دادن این تاپیک را از لیست خوانده نشده متوقف کن وقتی پست های جدید بوجود آمد"
         dismiss_new: "بستن جدید"
+        change_category: "تغییر دسته بندی"
         close_topics: "بستن جستارها"
+        archive_topics: "آرشیو موضوعات"
+        notification_level: "تغییر سطح آگاه‌سازی"
       none:
         unread: "جستار خوانده نشده‌ای ندارید."
         new: "شما هیچ جستار تازه‌ای ندارید"
@@ -664,18 +691,21 @@ fa_IR:
         hot: "هیچ جستار داغی نیست."
         bookmarks: "هنوز هیچ موضوع نشانک‌گذاری شده‌ای ندارید."
         category: "هیچ جستاری در {{category}} نیست."
+        top: "برترین موضوعی وجود ندارد"
       bottom:
         latest: "جستار تازهٔ دیگری نیست."
         hot: "جستار داغ دیگری نیست."
+        posted: "هیچ موضوعات نوشته شده وجود دارد."
         read: "جستار خوانده شدهٔ‌دیگری نیست."
         new: "جستار تازهٔ دیگری نیست."
         unread: "جستاره خوانده نشدهٔ دیگری نیست."
         category: "هیچ جستار دیگری در {{category}} نیست."
         bookmarks: "موضوعات نشانک‌گذاری شده‌ی دیگری وجود ندارد."
     topic:
+      filter_to: "{{post_count}} نوشته در موضوع "
       create: 'موضوع جدید'
       create_long: 'ساختن یک جُستار تازه'
-      private_message: 'آغاز یک پیام خصوصی'
+      private_message: 'شروع یک پیغام'
       list: 'جستارها'
       new: 'جستار تازه'
       unread: 'خوانده نشده'
@@ -732,6 +762,18 @@ fa_IR:
           '2': 'شما اطلاعیه ای دریافت خواهید کرد چون  <a href="/users/{{username}}/preferences">این موضوع را مطالعه نماید</a>.'
         watching_pm:
           title: "در حال مشاهده"
+        tracking_pm:
+          title: "ردگیری"
+        tracking:
+          title: "ردگیری"
+        regular:
+          title: "منظم"
+        regular_pm:
+          title: "عادی"
+        muted_pm:
+          title: "بی صدا شد"
+        muted:
+          title: "بی صدا شد"
       actions:
         recover: "بازیابی جستار"
         delete: "پاک کردن جستار"
@@ -745,6 +787,7 @@ fa_IR:
         pin_globally: "سنجاق کردن موضوع در سطح سراسری"
         unarchive: "جستار بایگانی نشده"
         archive: "بایگانی کردن جستار"
+        reset_read: "تنظیم مجدد خواندن داده ها"
         multi_select: "گزیدن دیدگاه‌ها"
       reply:
         title: 'پاسخ'
@@ -758,11 +801,13 @@ fa_IR:
         title: 'پرچم'
         success_message: 'شما باموفقیت این جستار را پرچم زدید'
       feature_topic:
+        title: " ویژگی های این موضوع"
         already_pinned:
           one: "موضوعات سنجاق شده {{categoryLink}}: <strong class='badge badge-notification unread'>1</strong>"
+        already_pinned_globally:
+          one: "موضوعاتی که در سطح سراسر سنجاق شده اند : <strong class='badge badge-notification unread'>1</strong>"
       inviting: "فراخوانی..."
       invite_private:
-        title: 'فراخوانی به پیام خصوصی'
         email_or_username: "رایانامه یا نام کاربر فراخوان شده"
         email_or_username_placeholder: "نشانی رایانامه یا نام کاربری"
         action: "فراخوانی"
@@ -773,7 +818,10 @@ fa_IR:
         help: 'ارسال دعوتنامه به دوستان، به گونه‌ای که بتوانند با یک کلیک به این موضوع پاسخ دهند.'
         to_topic: "ما رایانامهٔ کوتاهی را برای دوست‌تان می‌فرستیم تا بی‌درنگ عضو شود و با فشردن یک پیوند، به این جستار پاسخ دهد، بی‌نیاز از درون آمدن."
         email_placeholder: 'name@example.com'
+      login_reply: 'برای پاسخ وارد شوید'
       filters:
+        n_posts:
+          other: "{{count}} نوشته ها"
         cancel: "حذف فیلتر"
       split_topic:
         title: "انتقال به موضوع موجود"
@@ -782,16 +830,28 @@ fa_IR:
       merge_topic:
         title: "انتقال به موضوع موجود"
         action: "انتقال به موضوع موجود"
+        instructions:
+          other: "لطفاً موضوعی را که قصد دارید <b>{{count}}</b> تا از نوشته‌ها را به آن انتقال دهید، انتخاب نمایید."
       change_owner:
+        title: "تغییر صاحب نوشته ها"
         action: "تغییر مالکیت"
+        label: "نوشته مالک جدید"
+        placeholder: "نام کاربری مالک جدید"
       multi_select:
+        select: 'انتخاب کنید'
+        selected: 'انتخاب کنید({{count}}) '
+        select_replies: 'انتخاب کردن + جواب دادن'
         delete: حذف انتخاب شده ها
         cancel: لغو انتخاب
         select_all: انتخاب همه
         deselect_all: عدم انتخاب همه
+        description:
+          other: شما <b>{{count}}</b> نوشته انتخاب کرده اید
     post:
+      reply_topic: "پاسخ به {{link}}"
       quote_reply: "پاسخ با نقل‌قول"
       edit_reason: "دلیل:"
+      post_number: "نوشته {{number}}"
       in_reply_to: "پاسخ به"
       last_edited_on: "آخرین ویرایش دیدگاه در"
       reply_as_new_topic: "پاسخگویی به عنوان یک موضوع لینک شده"
@@ -799,6 +859,7 @@ fa_IR:
       follow_quote: "برو به دیدگاهی که نقل‌قول شده"
       show_full: "نمایش کامل دیدگاه"
       show_hidden: 'نمایش درون‌مایهٔ پنهان'
+      expand_collapse: "باز کردن/گستردن"
       gap:
         other: "{{count}} دیدگاه پنهان"
       more_links: "{{count}} مورد دیگر..."
@@ -839,6 +900,8 @@ fa_IR:
         unhide: "آشکار کردن"
       actions:
         flag: 'پرچم'
+        defer_flags:
+          other: "پرچم تسلیم"
         it_too:
           off_topic: "هم‌چنین آن یکی را پرچم بزنید"
           spam: "هم‌چنین آن یکی را پرچم بزنید"
@@ -861,9 +924,7 @@ fa_IR:
           inappropriate: "{{icons}} این مورد را نامناسب دانست"
           notify_moderators: "{{icons}} ناظمان را آگاه کرد"
           notify_moderators_with_url: "{{icons}} <a href='{{postUrl}}'>ناظمان را آگاه کرد</a>"
-          notify_user: "{{icons}} یک پیام خصوصی فرستاد"
-          notify_user_with_url: "{{icons}} یک <a href='{{postUrl}}'>پیام خصوصی</a> فرستاد"
-          bookmark: "{{icons}} روی این نشانک گذاشت"
+          bookmark: "{{icons}} این را نشانه‌گذاری کرد"
           like: "{{icons}} این مورد را پسندید"
           vote: "{{icons}} به این مورد رأی داد"
         by_you:
@@ -871,7 +932,6 @@ fa_IR:
           spam: "شما برای این مورد پرچم هرزنامه زدید"
           inappropriate: "شما این مورد را نامناسب گزارش کردید."
           notify_moderators: "شما این مورد را برای بررسی پرچم زدید"
-          notify_user: "شما به این کاربر یک پیام خصوصی فرستاید"
           bookmark: "شما  روی این دیدگاه نشانک گذاشتید"
           like: "شما این دیدگاه را پسند کردید"
           vote: "شما به این دیدگاه رأی دادید"
@@ -884,8 +944,6 @@ fa_IR:
             other: "شما و {{count}} کاربر دیگر این مورد را نامناسب گزارش کردید"
           notify_moderators:
             other: "شما و {{count}} کاربر دیگر این مورد را برای بررسی گزارش کردید"
-          notify_user:
-            other: "شما و {{count}} کاربر دیگر پیام خصوصی به این کاربر فرستادید"
           bookmark:
             other: "شما و {{count}} کاربر دیگر روی این دیدگاه نشانک گذاشتید"
           like:
@@ -901,8 +959,6 @@ fa_IR:
             other: "{{count}} کاربر این مورد را نامناسب گزارش کردند"
           notify_moderators:
             other: "{{count}} کاربر این مورد را برای بررسی گزارش کردند"
-          notify_user:
-            other: "{{count}} کاربر پیام خصوصی به ا ین کاربر فرستادند"
           bookmark:
             other: "{{count}} کاربر روی این دیدگاه نشانک گذاشتند"
           like:
@@ -959,6 +1015,7 @@ fa_IR:
       foreground_color: "رنگ پیش زمینه"
       name_placeholder: "حداکثر یک با دوکلمه"
       color_placeholder: "هر رنگ وب"
+      delete_confirm: "آیا مطمئنید که می‌خواهید این دسته‌بندی را پاک کنید؟"
       list: "فهرست دسته‌ها"
       change_in_category_topic: "ویرایش توضیحات"
       security: "امنیت"
@@ -983,9 +1040,9 @@ fa_IR:
     flagging:
       action: 'پرچم‌گذاری دیدگاه'
       take_action: "اقدام"
-      notify_action: 'پیام خصوصی'
       delete_spammer: "پاک کردن هرزنگار"
       yes_delete_spammer: "بله، پاک‌کردن هرزنگار"
+      ip_address_missing: "(N/A)"
       hidden_email_address: "(مخفی)"
       cant: "متأسفیم، در این زمان نمی‌توانید روی این دیدگاه بگذارید."
       formatted_name:
@@ -996,7 +1053,6 @@ fa_IR:
         left: "{{n}} نویسهٔ دیگر جا دارد"
     flagging_topic:
       action: "پرچم‌گذاری جستار"
-      notify_action: "پیام خصوصی"
     topic_map:
       title: "چکیدهٔ جستار"
       clicks:
@@ -1093,6 +1149,7 @@ fa_IR:
         this_week: "این هفته"
         today: "امروز"
         other_periods: "دیدن بهترین موضوعات بیشتر "
+    browser_update: 'متاسفانه, <a href="http://discours.ir/t/topic/117">مرورگر شما خیلی قدیمی است برای ادامه کار در این وب سایت</a>. لطفا <a href="http://browsehappy.com">مرورگر خود را بروز رسانی نمایید</a>.'
     permission_types:
       full: "ساختن / پاسخ دادن / دیدن"
       create_post: "پاسخ دادن / دیدن"
@@ -1108,6 +1165,8 @@ fa_IR:
         version: "نسخه"
         up_to_date: "شما به روز هستید!"
         please_upgrade: "لطفا ارتقاء دهید!"
+        no_check_performed: "بررسی برای بروزرسانی انجام نشد. از اجرای  sidekiq اطمینان حاصل کنید."
+        stale_data: "بررسی برای بروزرسانی اخیراً انجام نگرفته است. از اجرای  sidekiq اطمینان حاصل کنید."
         version_check_pending: "گویا به‌تازگی به‌روز کرده‌اید. عالیه!"
         installed_version: "نصب"
         latest_version: "آخرین"
@@ -1117,8 +1176,7 @@ fa_IR:
         moderators: 'مدیران:'
         admins: 'مدیران کل:'
         blocked: 'مسدود شده ها:'
-        private_messages_short: "PMها"
-        private_messages_title: "پیام‌های خصوصی"
+        suspended: 'تعلیق شده:'
         space_free: "{{size}} آزاد"
         uploads: "بارگذاری ها"
         backups: "پشتیبان ها"
@@ -1134,6 +1192,7 @@ fa_IR:
           all: "همه"
           view_table: "جدول"
           view_chart: "نمودار میله ها"
+          refresh_report: "تازه کردن گزارش"
           start_date: "تاریخ شروع"
           end_date: "تاریخ پایان"
       commits:
@@ -1158,6 +1217,7 @@ fa_IR:
         dispositions:
           agreed: "موافقت شد"
           disagreed: "مخالفت شد"
+          deferred: "دیرفرست"
         system: "سیستم"
         error: "اشتباهی روی داد"
         reply_message: "پاسخ دادن"
@@ -1188,17 +1248,14 @@ fa_IR:
         name: "نام"
         add: "اضافه کردن"
         add_members: "اضافه کردن عضو"
-        custom:
-          label: "سفارشی"
-          title: "گروه سفارشی"
-        automatic:
-          label: "خودکار"
-          title: "گروه خودکار"
+        custom: "رسم"
+        automatic: "خودکار"
       api:
         user: "کاربر"
         title: "API"
         key: "کلید API"
         generate: "تولید کردن"
+        regenerate: "احیاء کردن"
         revoke: "لغو کردن"
         info_html: "جستارهای تازه پس از آخرین بازدید شما"
         all_users: "همه کاربران"
@@ -1208,6 +1265,7 @@ fa_IR:
         name: "نام"
         none_installed: "شما هیچ افزونه نصب شده ای  ندارید"
         version: "نسخه"
+        change_settings: "تغییر تنظیمات"
         howto: "<a href=\"http://discours.ir\">چگونه یک افزونه نصب کنیم؟ </a>"
       backups:
         title: "پشتیبان گیری"
@@ -1218,43 +1276,41 @@ fa_IR:
         read_only:
           enable:
             title: "به کار گرفتن شیوهٔ‌ فقط-خواندنی"
-            text: "به کار گرفتن حالت فقط-خواندنی"
             confirm: "آیا مطمئنید که می‌خواهید حالت فقط-خواندنی را به کار بیاندازید؟"
           disable:
             title: "از کار انداختن حالت فقط-خواندنی"
-            text: "از کار انداختن حالت فقط-خواندنی"
         logs:
           none: "هنوز بدون گزارش است ..."
         columns:
           filename: "نام پرونده"
           size: "اندازه"
         upload:
-          text: "بار گذاری"
+          label: "بار گذاری"
           uploading: "در حال بار گذاری ..."
         operations:
           is_running: "عملیاتی در جریان است..."
           cancel:
-            text: "لغو کردن"
+            label: "لغو کردن"
             title: "کنار گذاشتن عملیات کنونی"
             confirm: "آیا مطمئنید که می‌خواهید عملیات کنونی را کنار بگذارید؟"
           backup:
-            text: "پشتیبان"
+            label: "پشتیبان"
             title: "ساختن یک پشتیبان"
           download:
-            text: "بارگیری"
+            label: "دانلود"
             title: "بارگیری پشتیبان"
           destroy:
-            text: "پاک کردن"
             title: "پاک کردن پشتیبان"
             confirm: "آیا مطمئنید که می‌خواهید پشتیبان را از بین ببرید؟"
           restore:
             is_disabled: "بازگردانی در تنظیمات انجمن از کار انداخته شده است."
-            text: "بازگردانی"
+            label: "بازگرداندن"
             title: "بازگردانی پشتیبان"
             confirm: "آیا مطمئنید که می‌خواهید پشتیبان را برگردانید؟"
           rollback:
-            text: "عقبگرد"
+            label: "عقبگرد"
       export_csv:
+        user_archive_confirm: "آیا مطمئنید که می‌خواهید نوشته‌هایتان را دانلود کنید؟"
         button_text: "خروجی گرفتن"
       invite:
         button_text: "ارسال دعوتنامه"
@@ -1413,6 +1469,8 @@ fa_IR:
           url: "نشانی اینترنتی"
           domain: "دامنه"
         screened_ips:
+          title: "نمایش آپی پی ها"
+          delete_confirm: "آیا از حذف قانون وضع شده برای {ip_address}% اطمینان دارید؟"
           actions:
             block: "بستن"
             do_nothing: "اجازه دادن"
@@ -1426,8 +1484,11 @@ fa_IR:
             text: "جمع کردن"
         logster:
           title: "گزارش خطا"
+      impersonate:
+        title: "جعل هویت کردن"
       users:
         title: 'کاربران'
+        create: 'اضافه کردن کاربر ادمین'
         last_emailed: "آخرین ایمیل فرستاده شده"
         not_found: "lj"
         active: "فعال"
@@ -1438,8 +1499,9 @@ fa_IR:
           pending: "چشم‌به‌راه"
           staff: 'مدیران'
           suspended: 'معلق شد'
-          blocked: 'قفل شده'
+          blocked: 'مسدود شده'
           suspect: 'مشکوک'
+        approved: "تایید شد ؟"
         approved_selected:
           other: "کاربران تایید شده  ({{count}})"
         reject_selected:
@@ -1456,32 +1518,58 @@ fa_IR:
           staff: "مدیر"
           admins: 'کاربران مدیر'
           moderators: 'مدیران'
-          blocked: 'کاربران بلوک شده'
+          blocked: 'کاربران مسدود شده'
           suspended: 'کاربران تعلیق شده'
+          suspect: 'کاربران مشکوک'
+        reject_successful:
+          other: "کاربران %{count}  با موفقیت رد شدند"
         not_verified: "تایید نشده"
         check_email:
           text: "نشان دادن"
       user:
+        suspend_failed: "در جریان به تعلیق درآوردن این کاربر اشتباهی رخ داد. {{error}}"
+        unsuspend_failed: "در جریان خارج کردن این کاربر از تعلیق، اشتباهی رخ داد {{error}}"
+        suspend_duration: "کاربر چه مدت در تعلیق خواهد بود؟"
         suspend_duration_units: "(روز ها)"
+        suspend_reason_label: "شما چرا معلق شده‌اید؟ این متن بر روی صفحه‌ی نمایه‌ی کاربر <b/>برای همه قابل مشاهده خواهد بود<b>، و در هنگام ورود به سیستم نیز به خود کاربر نشان داده خواهد شد. لطفاً خلاصه بنویسید."
         suspend_reason: "دلیل"
         suspended_by: "تعلیق شده توسط"
         delete_all_posts: "پاک کردن همهٔ دیدگاه‌ها"
         suspend: "تعلیق"
+        unsuspend: "خارج کردن از تعلیق"
+        suspended: "تعلیق شد ؟"
         moderator: "مدیر ؟ "
         admin: "مدیر؟"
+        blocked: "مسدود شد ؟"
         show_admin_profile: "مدیر"
         edit_title: "ویرایش سرنویس"
         save_title: "اندوختن سرنویس"
+        refresh_browsers: "تازه کردن اجباری مرورگر"
+        refresh_browsers_message: "ارسال پیام به تمام مشتری ها! "
         show_public_profile: "نماش نمایه همگانی"
+        impersonate: 'جعل هویت کردن'
         ip_lookup: "مشاهده ای پی"
         log_out: "خروج"
         revoke_admin: 'لغو مدیریت'
+        grant_admin: 'اعطای مدیریت'
+        block: 'عقب'
+        reputation: ' سابقه'
         permissions: پروانه‌ها
+        activity: فعالیت
+        like_count: لایک‌های اعطایی/دریافتی
+        last_100_days: 'در 100 روز گذشته'
         private_topics_count: جستارهای خصوصی
+        post_count: پست ایجاد شده
+        topics_entered: بازدید موضوعات
+        approve: 'تصویب'
+        approved_by: "تصویب شده توسط"
+        anonymize: "کاربر ناشناس"
         delete: "پاک کردن کاربر"
         delete_forbidden_because_staff: "مدیران و ناظمان را نمی‌توانید پاک کنید"
         delete_forbidden:
           other: "نمی‌توانید کاربرانی را که جستار دارند پاک کنید. پیش از تلاش برای پاک کردن کاربر، نخست همهٔ‌ جستارهایش را پاک کنید. (جستارهایی که بیش از %{count}  روز پیش فرستاده شده باشند، نمی‌توانند پاک شوند.)"
+        delete_and_block: "حذف و <b>مسدود</b>کن این آی پی و آدرس ایمل را"
+        delete_dont_block: "فقط حذف"
         deleted: "کاربر پاک شد."
         delete_failed: "خطایی در پاک کردن آن کاربر روی داد. پیش از تلاش برای پاک کردن کاربر، مطمئن شوید همهٔ‌جستارها پاک شوند."
         send_activation_email: "فرستادن رایانامه فعال‌سازی"
@@ -1493,14 +1581,41 @@ fa_IR:
         deactivate_failed: "در غیرفعال کردن این کاربر مشکلی پیش آمد."
         unblock_failed: 'در برداشتن قفل این کاربر مشکلی پیش آمد.'
         block_failed: 'در قفل کردن این کاربر مشکلی پیش آمد.'
+        suspended_explanation: "کاربر تعلیق شده نمی‌تواند وارد سیستم شود."
         block_explanation: "کاربر قفل شده نمی‌تواند دیدگاهی بگذارد یا جستاری آغاز کند."
+        trust_level_change_failed: "در تغییر سطح اعتماد کاربر مشکلی پیش آمد."
+        grant_admin_failed: "در اعطای اختیارات مدیریت مشکلی پیش آمد."
+        suspend_modal_title: "کاربران تعلیق شده"
+        trust_level_2_users: "کاربران سطح اعتماد 2"
+        trust_level_3_requirements: "مقررات سطح اعتماد 3"
+        trust_level_locked_tip: "سطح اعتماد بسته شده است. سیستم قادر به ترفیع/تنزل درجه‌ی کاربر نیست."
+        trust_level_unlocked_tip: "سطح اعتماد باز شده است. سیستم قادر به ترفیع/تنزل درجه‌ی کاربر خواهد بود."
+        lock_trust_level: "بستن سطح اعتماد"
+        unlock_trust_level: "باز کردن سطح اعتماد"
         tl3_requirements:
+          title: "شرایط لازم برای سطح اعتماد 3."
           table_title: "در ۱۰۰ روز اخیر:"
           value_heading: "مقدار"
           requirement_heading: "نیازمندی‌ها"
           visits: "نمایش ها"
           days: "روز ها"
+          topics_replied_to: "پاسخ به موضوعات"
+          topics_viewed: "بازدید موضوعات"
+          topics_viewed_all_time: "موضوعات مشاهده شده ( تمام مدت )"
+          posts_read: "نوشته‌های خوانده شده"
+          posts_read_all_time: "نوشته‌های خوانده شده ( تمام مدت )"
           flagged_posts: "دیدگاه‌های پرچم‌خورده"
+          flagged_by_users: "کاربرانی که پرچم خورده‌اند"
+          likes_given: "لایک‌های اعطایی"
+          likes_received: "لایک‌های دریافتی"
+          likes_received_days: "لایک‌های دریافتی: روزهای خاص"
+          likes_received_users: "لایک‌های دریافتی: کاربران خاص"
+          qualifies: "دارای صلاحیت برای سطح اعتماد 3."
+          does_not_qualify: "فاقد صلاحیت برای سطح اعتماد 3."
+          will_be_promoted: "به‌زودی ترفیع درجه خواهد گرفت."
+          will_be_demoted: "به‌زودی تنزل درجه خواهد گرفت."
+          locked_will_not_be_promoted: "سطح اعتماد بسته شده. دیگر ترفیع درجه نخواهد گرفت."
+          locked_will_not_be_demoted: "سطح اعتماد بسته شده. دیگر تنزل درجه نخواهد گرفت."
         sso:
           title: "ورود یکپارچه به سیستم"
           external_id: "ای دی خارجی"
@@ -1510,6 +1625,7 @@ fa_IR:
           external_avatar_url: "URL تصویر نمایه"
       user_fields:
         title: "فیلد های کاربر"
+        help: "به فیلدهایی که کاربرانتان می‌توانند پر کنند اضافه کنید."
         create: "ساخت فیلد برای کاربر"
         untitled: "بدون عنوان"
         name: "نام فیلد"
@@ -1535,6 +1651,9 @@ fa_IR:
         field_types:
           text: 'فیلد متن'
           confirm: 'تایید'
+      site_text:
+        none: "یک دسته‌ از محتویات را برای آغاز ویرایش انتخاب کنید."
+        title: 'محتویات متن'
       site_settings:
         show_overriden: 'تنها بازنویسی‌شده‌ها را نمایش بده'
         title: 'تنظیمات'
@@ -1553,6 +1672,7 @@ fa_IR:
           files: 'پرونده‌ها'
           trust: 'سطح اعتماد'
           security: 'امنیت'
+          onebox: "یک جعبه"
           seo: 'SEO'
           spam: 'هرزنامه'
           developer: 'توسعه دهنده'
@@ -1582,29 +1702,57 @@ fa_IR:
         delete_confirm: آیا مطمئنید که می‌خواهید این مدال را پاک کنید؟
         revoke: بازیافت
         reason: دلیل
+        expand: گستردن hellip&;
         revoke_confirm: آیا مطمئنید که می‌خواهید این مدال را بازیافت کنید؟
         edit_badges: ویرایش مدال‌ها
+        grant_badge: اعطای مدال
         granted_badges: مدالها اعطایی
         grant: اهداء
         no_user_badges: "%{name} هیچ مدالی دریافت نکرده است."
+        no_badges: مدالی برای اعطا کردن وجود ندارد.
+        none_selected: "برای شروع یک مدال رو انتخاب کنید"
         enabled: به‌کارگیری مدال
-        icon: نقشک
+        icon: آیکن
         image: تصویر
+        query: پرس جوی مدال (SQL)
         trigger: گیره
         trigger_type:
           none: "به‌روزرسانی روزانه"
           post_action: "هنگامی‌که کاربری روی دیدگاهی کاری انجام می‌دهد"
           post_revision: "هنگی که یک کاربر دیدگاهی ویرایش می‌کند یا فرستد"
+          trust_level_change: "هنگامی که کاربری سطح اعتماد را تغییر می‌دهد"
           user_change: "هنگامی که کاربری ویرایش یا ساخته می‌شود"
         preview:
+          plan_text: "پیشنمایش با طرح پرس و جو"
+          modal_title: "پیشنمایش پرس و جو مدال "
+          bad_count_warning:
+            header: "هشدار!"
           grant_count:
+            zero: "هیچ مدالی برای اختصاص دادن وجود ندارد"
             one: "<b>1</b> مدال اختصاص داده شد."
+            other: "<B>٪ {COUNT} </ B> مدال ها اختصاص داده شد"
+          sample: "نمونه:"
+          grant:
+            with: <span class="username">%{username}</span>
+            with_post: <span class="username">%{username}</span> برای نوشته در %{link}
+            with_post_time: <span class="username">%{username}</span> برای نوشته %{link} در <span class="time">%{time}</span>
+            with_time: <span class="username">%{username}</span> در <span class="time">%{time}</span>
+      emoji:
+        title: "شکلک"
+        help: "اضافه کردن شکلک های جدید که در دسترس همگان خواهد بود. (PROTIP: کشیدن و رها کردن فایل های چندگانه در یک بار)"
+        add: "افزودن یک شکلک جدید"
+        name: "نام"
+        image: "تصویر"
+        delete_confirm: "آیا مطمئنید که می‌خواهید شکلک :{name}%: را پاک کنید؟"
     lightbox:
       download: "بارگیری"
+    search_help:
+      title: 'کمک جستجو'
     keyboard_shortcuts_help:
       title: 'میانبر‌های تخته‌کلید'
       jump_to:
         title: 'بپر به'
+        home: '<b>g</b>, <b>h</b> خانه (آخرین ها)'
         latest: '<b>g</b>, <b>l</b>آخرین'
         new: '<b>g</b>, <b>n</b> جدید'
         unread: '<b>g</b>, <b>u</b> خوانده نشده'
@@ -1614,15 +1762,25 @@ fa_IR:
         title: 'راهبری'
         jump: '<b>#</b> رفتن به نوشته #'
         back: 'برگشت'
+        up_down: '<b>k</b>/<b>j</b> انتقال انتخاب شده &uarr; &darr;'
+        open: '<b>o</b> or <b>Enter</b> باز کردن موضوع انتخاب شده'
+        next_prev: '<b>shift</b>+<b>j</b>/<b>shift</b>+<b>k</b> بخش قبلی/بعدی'
       application:
         title: 'نرم‌افزار'
         create: '<b>c</b> ساختن یک جستار نو'
         notifications: '<b>n</b> باز کردن آگاه‌سازی‌ها'
         site_map_menu: '<b>=</b> باز کردن منوی سایت'
         user_profile_menu: '<b>p</b> باز کردن منوی کاربران'
+        show_incoming_updated_topics: '<b>.</b> نمایش موضوعات بروز شده'
         search: '<b>/</b> جستجو'
         help: '<b>?</b> باز کردن راهنمای کیبورد'
+        dismiss_new_posts: '<b>x</b>, <b>r</b>بستن جدید/نوشته ها '
+        dismiss_topics: '<b>x</b>, <b>t</b> بستن موضوعات'
       actions:
+        title: 'عملیات'
+        bookmark_topic: '<b>f</b> تعویض نشانک موضوع'
+        pin_unpin_topic: '<b>shift</b>+<b>p</b> سنجاق /لغو ساجاق موضوع'
+        share_topic: '<b>shift</b>+<b>s</b> اشتراک گذاری نوشته'
         share_post: 'به اشتراک‌گذاری دیدگاه'
         reply_as_new_topic: '<b>t</b> پاسخگویی به عنوان یک موضوع لینک شده'
         reply_topic: '<b>shift</b>+<b>r</b> پاسخ به موضوع'
@@ -1633,12 +1791,21 @@ fa_IR:
         bookmark: '<b>b</b> نشانک‌گذاری دیدگاه'
         edit: '<b>e</b> ویرایش دیدگاه'
         delete: '<b>d</b> پاک کردن دیدگاه'
+        mark_muted: '<b>m</b>, <b>m</b> بی صدا کردن موضوع'
+        mark_regular: '<b>m</b>, <b>r</b> تنظیم ( پیش فرض) موضوع'
+        mark_tracking: '<b>m</b>, <b>t</b> Track tموضوع'
+        mark_watching: '<b>m</b>, <b>w</b> مشاهده موضوع'
     badges:
       title: مدال‌ها
+      allow_title: "می تواند برای یک عنوان استفاده کنید"
+      multiple_grant: "می توان چندین بار اهدا کرد"
       badge_count:
         other: "%{count} مدال"
       more_badges:
         other: "+%{count} بیش‌تر"
+      granted:
+        other: "٪ {COUNT} اعطا شد"
+      select_badge_for_title: انتخاب یک مدال برای استفاده در عنوان خود
       none: "<none>"
       badge_grouping:
         getting_started:
@@ -1657,12 +1824,56 @@ fa_IR:
           description: نخستین ویرایش دیدگاه
         basic_user:
           name: اساسی
+          description: <a href="http://discours.ir/t/topic/98">اعطا کردن</a> تمام عملکرد های ضروری برای انجمن
         member:
           name: اعضا
+          description: <a href="http://discours.ir/t/topic/98">اعطا کردن</a> دعوت نامه
+        regular:
+          name: منظم
+          description: '<a href="http://discours.ir/t/topic/98">اعطا کردن</
+
+            a> دعوت نامه تغییر دسته بندی، تغییر نام دهید، به دنبال کردن لینک ها و سالن'
+        leader:
+          name: رهبر
+          description: '<a href="http://discours.ir/t/topic/98">اعطا کردن</a>
+
+            ویرایش سراسری، پین، بستن، بایگانی، تقسیم و ادغام'
         welcome:
           name: خوش آمدید
+          description: دریافت یک پسند
+        autobiographer:
+          name: نویسندهء شرح حال خود
+          description: فیلد کاربر <a href="/my/preferences">نمایه </a>اطلاعات
         anniversary:
           name: سالگرد
+          description: عضو فعال به مدت یک سال،ارسال شده حداقل یک بار
+        nice_post:
+          name: نوشته‌ی دلپذیر
+          description: دریافت 10 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
+        good_post:
+          name: نوشته‌ی خوب
+          description: دریافت 25 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
+        great_post:
+          name: نوشته‌ی عالی
+          description: دریافت 50 پسند در یک نوشته. این نشان را می توان چندین بار اعطا کرد
+        nice_topic:
+          name: موضوع دلپذیر
+          description: دریافت 10 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
+        good_topic:
+          name: موضوع خوب
+          description: دریافت 25 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
+        great_topic:
+          name: موضوع عالی
+          description: دریافت 50 پسند در یک موضوع. این نشان را می توان چندین بار اعطا کرد
+        nice_share:
+          name: ا‌شتراک‌گذاری دلپذیر
+          description: اشتراک گذاری نوشته با 25 بازدید کننده منحصر به فرد
+        good_share:
+          name: اشتراک‌گذاری خوب
+          description: اشتراک گذاری نوشته با 300 بازدید کننده منحصر به فرد
+        great_share:
+          name: اشتراک‌گذاری عالی
+          description: اشتراک گذاری نوشته با 1000 بازدید کننده منحصر به فرد
         first_like:
           name: نخستین پسند
           description: دیدگاهی را پسندید
@@ -1674,8 +1885,10 @@ fa_IR:
           description: دیدگاهی به اشتراک گذاشت
         first_link:
           name: پیوند نخست
+          description: لین های داخلی اضافه شده به دیگر موضوعات
         first_quote:
           name: نقل‌قول نخست
+          description: نقل قول یک کاربر
         read_guidelines:
           name: خواندن راهنماها
           description: Read the <a href="/guidelines">community guidelines</a>
@@ -1691,4 +1904,3 @@ fa_IR:
           <button class="btn btn-primary">گوگل</button>
         </form>
       </p>
-
