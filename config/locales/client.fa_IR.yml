@@ -190,7 +190,7 @@ fa_IR:
       you_replied_to_topic: "<a href='{{userUrl}}'>You</a> replied to <a href='{{topicUrl}}'>the topic</a>"
       user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a> mentioned <a href='{{user2Url}}'>{{another_user}}</a>"
       user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a> mentioned <a href='{{user2Url}}'>you</a>"
-      you_mentioned_user: "<a href='{{user1Url}}'>You</a> mentioned <a href='{{user2Url}}'>{{another_user}}</a>"
+      you_mentioned_user: "<a href='{{user1Url}}'>شما</a>  نام برده شده اید <a href='{{user2Url}}'>{{another_user}}</a>"
       posted_by_user: "Posted by <a href='{{userUrl}}'>{{user}}</a>"
       posted_by_you: "Posted by <a href='{{userUrl}}'>you</a>"
       sent_by_user: "Sent by <a href='{{userUrl}}'>{{user}}</a>"
@@ -218,13 +218,13 @@ fa_IR:
       visible: "همهٔ کاربران گروه را می‌بینند"
       title:
         other: "گروه‌ها"
-      members: "کاربران"
-      posts: "دیدگاه‌ها"
+      members: "اعضا"
+      posts: "نوشته ها"
       alias_levels:
         title: "چه کسی می تواند این گروه به عنوان یک نام مستعار استفاده کند؟"
         nobody: "هیچ‌کس"
         only_admins: "تنها مدیران"
-        mods_and_admins: "تنها ناظمان و مدیران"
+        mods_and_admins: "تنها مدیران کل و مدیران"
         members_mods_and_admins: "تنها کاربران گروه، ناظمان و مدیران"
         everyone: "هرکس"
     user_action_groups:
@@ -249,7 +249,7 @@ fa_IR:
       topics: "موضوعات"
       latest: "آخرین"
       latest_by: "آخرین توسط"
-      subcategories: "زیردسته‌ها"
+      subcategories: "زیر دسته‌ بندی ها"
       topic_stats: "شمار موضوعات تازه."
       topic_stat_sentence:
         other: "%{count} موضوعات تازه در %{unit} گذشته."
@@ -304,11 +304,11 @@ fa_IR:
       github_profile: "گیت هاب"
       mailing_list_mode: "برای هر نوشته جدید، رایانامه‌ای برای من بفرست (مگر اینکه من موضوع یا دسته‌بندی را ساکت کنم)"
       watched_categories: "تماشا"
-      watched_categories_instructions: "شما همهٔ‌ موضوعات تازه در این دسته‌ها را خودکار خواهید دید. از همهٔ نوشته ها و موضوعات تازه آگاه خواهید شد، هم‌چنین شمار نوشته های تازه و نخوانده پس از فهرست موضوع نشان داده می‌شود."
+      watched_categories_instructions: "شما همهٔ‌ موضوعات تازه در این دسته‌بندی ها را خودکار خواهید دید. از همهٔ نوشته ها و موضوعات تازه آگاه خواهید شد، هم‌چنین شمار نوشته های تازه و نخوانده پس از فهرست موضوع نشان داده می‌شود."
       tracked_categories: "پی‌گیری"
-      tracked_categories_instructions: "شما همهٔ‌ موضوعات تازه در این دسته‌ها را به صورت خودکار دنبال خواهید کرد. تعداد نوشته‌های تازه و خوانده نشده بعد از موضوع نشان داده خواهد شد."
+      tracked_categories_instructions: "شما همهٔ‌ موضوعات تازه در این دسته‌ بندی ها را به صورت خودکار دنبال خواهید کرد. تعداد نوشته‌های تازه و خوانده نشده بعد از موضوع نشان داده خواهد شد."
       muted_categories: "ساکت"
-      muted_categories_instructions: "از هر آن‌چه درباره موضوعات تازه در این دسته‌ها روی دهد، شما آگاه نخواهید شد و در تب نخواندهٔ‌ شما نمایش داده نمی‌شوند."
+      muted_categories_instructions: "از هر آن‌چه درباره موضوعات تازه در این دسته‌ بندی ها روی دهد، شما آگاه نخواهید شد و در تب نخواندهٔ‌ شما نمایش داده نمی‌شوند."
       delete_account: "حساب من را پاک کن"
       delete_account_confirm: "آیا مطمئنید که می‌خواهید شناسه‌تان را برای همیشه پاک کنید؟ برگشتی در کار نیست!"
       deleted_yourself: "حساب‌ کاربری شما با موفقیت حذف شد."
@@ -327,13 +327,13 @@ fa_IR:
       messages:
         all: "همه"
         mine: "خودم"
-        unread: "نخوانده"
+        unread: "خوانده‌ نشده‌"
       change_password:
         success: "(رایانامه فرستاده شد)"
         in_progress: "(در حال فرستادن رایانامه)"
         error: "(خطا)"
         action: "ارسال کلمه عبور به ایمیل"
-        set_password: "تغییر رمز عبور"
+        set_password: "تغییر کلمه عبور"
       change_about:
         title: "تغییر «دربارهٔ من»"
       change_username:
@@ -370,8 +370,8 @@ fa_IR:
         authenticated: "ایمیل شما تصدیق شد توسط {{provider}}"
         frequency:
           zero: "ما برای شما سریعا ایمیلی می فرستیم در صورتی که چیزهای فرستاده شده در ایمیل را نخوانده باشید"
-          one: "ما در صورتی به شما ایمیل می زنیم که شما در لحظه آخر ندیده باشیم"
-          other: "ما در صورتی به شما ایمیل می زنیم که شما را در آخرین دقیقه {{شمار}}  ندیده باشیم "
+          one: "ما در صورتی به شما ایمیل می زنیم که شما را تا آخرین لحظه ندیده باشیم"
+          other: "ما در صورتی به شما ایمیل می زنیم که شما را تا دقیقه {{count}}  ندیده باشیم "
       name:
         title: "نام"
         instructions: "نام کامل (اختیاری)"
@@ -413,18 +413,19 @@ fa_IR:
         every_three_days: "هر سه روز"
         weekly: "هفتگی"
         every_two_weeks: "هر دو هفته "
+      email_direct: "به من ایمیل ارسال کن هنگامی که کسی از من نقل قول کرد،با نوشته های من پاسخ داد،یا به من اشاره کرد @username کاربری یا مرا به موضوعی دعوت کردند."
       email_private_messages: "به من ایمیل ارسال کن وقتی کسی به من پیام خصوصی فرستاد"
       email_always: "برای من ایمیل آگاه سازی نفرست هنگامی که در سایت فعال هستم"
       other_settings: "موارد دیگر"
-      categories_settings: "دسته‌ها"
+      categories_settings: "دسته‌بندی ها"
       new_topic_duration:
         label: "موضوعات را جدید در نظر بگیر وقتی که"
         not_viewed: "من هنوز آن ها را ندیدم"
         last_here: "آخرین باری که اینجا بودم ساخته شده‌اند"
         after_n_days:
-          other: " در روزهای {{count}}  گذشته ساخته شده‌"
+          other: " در {{count}} روز گذشته ساخته شده‌"
         after_n_weeks:
-          other: "درهفته های  {{count}} گذشته ساخته شده‌"
+          other: "در {{count}} هفته گذشته ساخته شده‌"
       auto_track_topics: "دنبال کردن خودکار موضوعاتی که وارد می‌شوم"
       auto_track_options:
         never: "هرگز"
@@ -454,7 +455,7 @@ fa_IR:
         account_age_days: "عمر حساب بر اساس روز"
         create: "فرستادن یک فراخوانه"
         bulk_invite:
-          none: "شما هنوز کسی را اینجا دعوت نکرده اید. می توانید بصورت تکی یا گروهی یکجا دعوتنامه را بفرستید از طریق  <a href='https://discours.ir'>بارگذار فراخوانه فله ای </a>."
+          none: "شما هنوز کسی را اینجا دعوت نکرده اید. می توانید بصورت تکی یا گروهی یکجا دعوتنامه را بفرستید از طریق  <a href='http://discours.ir'>بارگذار فراخوانه فله ای </a>."
           text: "دعوت گروهی از طریق فایل"
           uploading: "در حال بار گذاری ..."
           success: "فایل با موفقیت بارگذاری شد٬  وقتی که پروسس تمام شد  به شما را از طریق پیام اطلاع می دهیم. "
@@ -488,13 +489,13 @@ fa_IR:
       prev_page: "هنگام تلاش برای بارگزاری"
       reasons:
         network: "خطای شبکه"
-        server: "ارور سرور"
+        server: "خطای سرور"
         forbidden: "دسترسی قطع شده است"
         unknown: "خطا"
       desc:
         network: "ارتباط اینترنتی‌تان را بررسی کنید."
         network_fixed: "به نظر می رسد اون برگشت."
-        server: "کد ارور : {{status}}"
+        server: "کد خطا : {{status}}"
         forbidden: "شما اجازه دیدن آن را ندارید."
         unknown: "اشتباهی روی داد."
       buttons:
@@ -523,7 +524,7 @@ fa_IR:
     last_post: آخرین دیدگاه
     last_post_lowercase: آخرین نوشته
     summary:
-      enabled_description: "شما خلاصه ای از این موضوع را می بینید:  بهترین نوشته های  انتخاب شده توسط انجمن."
+      enabled_description: "شما خلاصه ای از این موضوع را می بینید:  بالاترین‌ نوشته های  انتخاب شده توسط انجمن."
       description: "<b>{{count}}</b> پاسخ"
       enable: 'خلاصه این موضوع'
       disable: 'نمایش همه دیدگاه‌ها'
@@ -620,7 +621,7 @@ fa_IR:
       create_pm: "پیام"
       title: "یا Ctrl+Enter را بفشارید"
       users_placeholder: "افزودن یک کاربر"
-      title_placeholder: "در یک جملهٔ‌کوتاه، این موضوع در چه موردی است؟"
+      title_placeholder: "در یک جملهٔ‌ کوتاه، این موضوع در چه موردی است؟"
       edit_reason_placeholder: "چرا ویرایش می‌کنید؟"
       show_edit_reason: "(افزودن دلیل ویرایش)"
       reply_placeholder: "اینجا بنویسید. برای آرایش از Markdown یا BBCode استفاده کنید. برای باگذاری تصویر، آن را به اینجا بکشید یا بچسبانید."
@@ -664,7 +665,7 @@ fa_IR:
           units: "(# از ساعت ها)"
           examples: 'لطفا عدد ساعت را وارد نمایید (24).'
     notifications:
-      title: "اطلاع رسانی با اشاره به @نام ،پاسخ ها به نوشته ها و موضوعات شما،پیام ها ، و ..."
+      title: "اطلاع رسانی با اشاره به @name ،پاسخ ها به نوشته ها و موضوعات شما،پیام ها ، و ..."
       more: "دیدن آگاه‌سازی‌های پیشن"
       total_flagged: "همهٔ دیدگاه‌های پرچم خورده"
       mentioned: "<i title='mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -737,13 +738,13 @@ fa_IR:
         new: "موضوع تازهٔ دیگری نیست."
         unread: "موضوع خوانده نشدهٔ دیگری نیست."
         category: "هیچ موضوع دیگری در {{category}} نیست."
-        top: "بهترین موضوعات بیشتری وجود ندارد"
+        top: "بالاترین‌ موضوعات بیشتری وجود ندارد"
         bookmarks: "موضوعات نشانک‌گذاری شده‌ی دیگری وجود ندارد."
         search: "نتیجه جستجوی دیگری وجود ندارد"
     topic:
       filter_to: "{{post_count}} نوشته در موضوع "
       create: 'موضوع جدید'
-      create_long: 'ساختن یک جُستار تازه'
+      create_long: 'ساختن یک موضوع تازه'
       private_message: 'شروع یک پیام'
       list: 'موضوعات'
       new: 'موضوع تازه'
@@ -776,7 +777,7 @@ fa_IR:
       read_more_in_category: "می خواهید بیشتر بخوانید? به موضوعات دیگر را مرور کنید {{catLink}} یا {{latestLink}}."
       read_more: "می خواهید بیشتر بخوانید? {{catLink}} یا {{latestLink}}."
       read_more_MF: "There { UNREAD, plural, =0 {} one { is <a href='/unread'>1 unread</a> } other { are <a href='/unread'># unread</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> topic} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> topics} } remaining, or {CATEGORY, select, true {browse other topics in {catLink}} false {{latestLink}} other {}}."
-      browse_all_categories: جست‌وجوی همهٔ دسته‌ها
+      browse_all_categories: جستوجوی همهٔ دسته‌ها
       view_latest_topics: مشاهده آخرین موضوع
       suggest_create_topic: چرا یک موضوع نسازید؟
       jump_reply_up: رفتن به جدید ترین پاسخ
@@ -798,7 +799,7 @@ fa_IR:
         position: "نوشته %{current} از %{total}"
       notifications:
         reasons:
-          '3_6': 'شما آگاه‌سازی‌ها را دریافت خواهید کرد، زیرا این دسته را تماشا می‌کنید.'
+          '3_6': 'شما آگاه‌سازی‌ها را دریافت خواهید کرد، زیرا این دسته بندی را تماشا می‌کنید.'
           '3_5': 'شما آگاه‌سازی‌ها را دریافت خواهید کرد، زیرا تماشای خودکار این موضوع را آغاز کرده‌اید.'
           '3_2': 'از آنجا که این موضوع را تماشا می‌کنید، از رویدادهای آن آگاه خواهید شد.'
           '3_1': 'از آنجا که این موضوع را ساخته‌اید، از رویدادهای آن آگاه خواهید شد.'
@@ -806,8 +807,8 @@ fa_IR:
           '2_4': 'از آنجا که یه این موضوع پاسخی فرستادید، از رویدادهای آن آگاه خواهید شد.'
           '2_2': 'از آنجا که این موضوع را دنبال می‌کنید، از رویدادهای آن آگاه خواهید شد.'
           '2': 'شما اطلاعیه ای دریافت خواهید کرد چون  <a href="/users/{{username}}/preferences">این موضوع را مطالعه نماید</a>.'
-          '1_2': 'به شما اطلاع داده خواهد شد اگر کسی به شما اشاره @نام یا پاسخ ها به نوشته شما'
-          '1': 'به شما اطلاع داده خواهد شد اگر کسی به شما اشاره @نام یا پاسخ ها به نوشته شما'
+          '1_2': 'به شما اطلاع داده خواهد شد اگر کسی به شما اشاره @name یا پاسخ ها به نوشته شما'
+          '1': 'به شما اطلاع داده خواهد شد اگر کسی به شما اشاره @name یا پاسخ ها به نوشته شما'
           '0_7': 'شما کل آگاه سازی های این دسته بندی را نادیده گرفته اید'
           '0_2': 'شما کل آگاه سازی های این موضوع را نادیده گرفته اید'
           '0': 'شما کل آگاه سازی های این موضوع را نادیده گرفته اید'
@@ -820,7 +821,7 @@ fa_IR:
         tracking:
           title: "ردگیری"
         regular:
-          title: "منظم"
+          title: "ناظم"
         regular_pm:
           title: "عادی"
         muted_pm:
@@ -857,14 +858,17 @@ fa_IR:
         success_message: 'شما باموفقیت این موضوع را پرچم زدید'
       feature_topic:
         title: " ویژگی های این موضوع"
-        unpin: "این موضوع را از لیست بهترین های دسته بندی {{categoryLink}} حذف کن"
+        unpin: "این موضوع را از لیست بالاترین‌ های دسته بندی {{categoryLink}} حذف کن"
+        pin_note: "کاربران می توانند موضوع را بصورت جداگانه برای خود از سنجاق در بیاورند"
         already_pinned:
           zero: "دیگر هیچ موضوعات سنجاق شده وجود ندارد در {{categoryLink}}."
         unpin_globally: "حذف این موضوع انجمن از بالای همه لیست موضوعات"
+        global_pin_note: "کاربران می توانند موضوع را بصورت جداگانه برای خود از سنجاق در بیاورند"
         already_pinned_globally:
           zero: "هیچ موضوعی که به صورت سرسری سنجاق شده باشد وجود ندارد."
           one: "موضوعات در سطح سراسری سنجاق شده است: <strong class='badge badge-notification unread'>1</strong>."
           other: "موضوعات در سطح سراسری سنجاق شده است: <strong class='badge badge-notification unread'>{{count}}</strong>."
+        banner_note: "کاربران می توانند اعلان را با بستن آنها رد کنند. فقط یک موضوع را می توان بصورت اعلان در هرزمان نمایش داد"
         already_banner:
           zero: "هیچ موضوع سرصفحه وجود ندارد"
           one: "در حال حاضر یک موضوع اعلان <strong class='badge badge-notification unread'>is</strong> وجود دارد."
@@ -879,7 +883,9 @@ fa_IR:
         group_name: "نام گروه"
       invite_reply:
         title: 'فراخوانی'
+        action: 'ارسال دعوت'
         to_forum: "ما ایملی کوتاه برای شما می فرستیم که دوست شما با کلیک کردن بر روی لینک سریعا ملحق شود٫‌ به ورود سیستم نیازی نیست. "
+        to_topic_blank: "نام کاربری یا ایمیل کسی را که می خواهید برای این موضوع دعوت کنید را وارد نمایید"
         email_placeholder: 'name@example.com'
       login_reply: 'برای پاسخ وارد شوید'
       filters:
@@ -1102,7 +1108,7 @@ fa_IR:
       color_placeholder: "هر رنگ وب"
       delete_confirm: "آیا مطمئنید که می‌خواهید این دسته‌بندی را پاک کنید؟"
       delete_error: "هنگام حذف دسته بندی خطایی رخ داد."
-      list: "فهرست دسته‌ها"
+      list: "فهرست دسته‌ بندی ها"
       no_description: "لطفا برای این دسته بندی توضیحاتی اضافه نمایید."
       change_in_category_topic: "ویرایش توضیحات"
       already_used: 'این رنگ توسط یک دسته بندی دیگر گزیده شده است'
@@ -1126,11 +1132,12 @@ fa_IR:
         tracking:
           title: "پیگیری"
         regular:
-          title: "منظم"
+          title: "ناظم"
         muted:
           title: "بی صدا شد"
     flagging:
-      title: 'تشکر برای کمک به جامعه مدنی جامعه ما!'
+      title: 'تشکر برای کمک به جامعه مدنی انجمن ما!'
+      private_reminder: 'پرچم های خصوصی, <b>فقط</b> قابل مشاهده برای مدیران'
       action: 'پرچم‌گذاری دیدگاه'
       take_action: "اقدام"
       notify_action: 'پیام'
@@ -1141,12 +1148,14 @@ fa_IR:
       cant: "متأسفیم، در این زمان نمی‌توانید روی این دیدگاه بگذارید."
       formatted_name:
         off_topic: "آن موضوع قدیمی است"
+        inappropriate: "این نامناسب است"
         spam: "آن هرز نامه است"
       custom_message:
         at_least: "دست‌کم {{n}} نویسه بنویسید"
         more: "{{n}} نویسهٔ دیگر تا بتوانید بفرستید"
         left: "{{n}} نویسهٔ دیگر جا دارد"
     flagging_topic:
+      title: "تشکر برای کمک به جامعه مدنی انجمن ما!"
       action: "پرچم‌گذاری موضوع"
       notify_action: "پیام"
     topic_map:
@@ -1165,6 +1174,7 @@ fa_IR:
         title: "خارج کردن از سنجاق"
       pinned_globally:
         title: "به صورت سراسری سنجاق شد"
+        help: "این موضوع بصورت سراسری سنجاق شده است، آن بالای تمامی موضوعات نمایش داده خواهد شد"
       pinned:
         title: "سنجاق شد"
       archived:
@@ -1189,7 +1199,7 @@ fa_IR:
     raw_email:
       title: "ایمیل خام"
       not_available: "در دسترس نیست!"
-    categories_list: "فهرست دسته‌ها"
+    categories_list: "فهرست دسته‌ بندی ها"
     filters:
       with_topics: "%{filter} موضوعات"
       with_category: "%{filter} %{category} موضوعات"
@@ -1205,14 +1215,14 @@ fa_IR:
         title: "جستجو"
         help: "جستجوی تمام موضوعات"
       categories:
-        title: "دسته‌ها"
+        title: "دسته‌ بندی ها"
         title_in: "دسته بندی - {{categoryName}}"
-        help: "همهٔ موضوعات در دسته‌ها جای گرفتند"
+        help: "همهٔ موضوعات در دسته‌ بندی ها جای گرفتند"
       unread:
         title:
-          zero: "نخوانده"
-          one: "نخوانده (۱)"
-          other: "نخوانده ({{count}})"
+          zero: "خوانده‌ نشده‌"
+          one: "خوانده‌ نشده‌ (۱)"
+          other: "خوانده‌ نشده‌ ({{count}})"
         lower_title_with_count:
           one: "1 خوانده نشده"
           other: "{{count}} خوانده نشده"
@@ -1238,21 +1248,21 @@ fa_IR:
           other: "{{categoryName}} ({{count}})"
         help: "موضوعات تازه در دستهٔ {{categoryName}}"
       top:
-        title: "بهترین ها"
+        title: "بالاترین‌ ها"
         yearly:
-          title: "بهترین سالانه"
+          title: "بالاترین‌ سالانه"
         monthly:
-          title: "بهترین ماهانه"
+          title: "بالاترین‌ ماهانه"
         weekly:
-          title: "بهترین هفتهگی"
+          title: "بالاترین‌ هفتهگی"
         daily:
-          title: "بهترین روزانه"
+          title: "بالاترین‌ روزانه"
         all: "تمام زمان ها"
         this_year: "امسال"
         this_month: "این ماه"
         this_week: "این هفته"
         today: "امروز"
-        other_periods: "دیدن بهترین موضوعات بیشتر "
+        other_periods: "دیدن بالاترین‌ موضوعات بیشتر "
     browser_update: 'متاسفانه, <a href="http://discours.ir/t/topic/117">مرورگر شما خیلی قدیمی است برای ادامه کار در این وب سایت</a>. لطفا <a href="http://browsehappy.com">مرورگر خود را بروز رسانی نمایید</a>.'
     permission_types:
       full: "ساختن / پاسخ دادن / دیدن"
@@ -1337,6 +1347,7 @@ fa_IR:
         no_results: "هیچ پرچمی نیست"
         topic_flagged: "این <strong>موضوع</strong> پرچم خورده است."
         visit_topic: "برای اقدام لازم، موضوع را ببینید"
+        was_edited: "نوشته پس از پرچم اول ویرایش شد"
         summary:
           action_type_3:
             other: "موضوعات غیرفعال x{{count}}"
@@ -1382,7 +1393,7 @@ fa_IR:
         none_installed: "شما هیچ افزونه نصب شده ای  ندارید"
         version: "نسخه"
         change_settings: "تغییر تنظیمات"
-        howto: "<a href=\"http://discours.ir\">چگونه یک افزونه نصب کنیم؟ </a>"
+        howto: "چگونه یک افزونه نصب کنیم؟"
       backups:
         title: "پشتیبان گیری"
         menu:
@@ -1637,7 +1648,7 @@ fa_IR:
           newuser: 'کاربران در سطح اعتماد 0 (کاربران جدید)'
           basic: 'کاربران در سطح اعتماد 1 (کاربر اصلی)'
           regular: 'کاربران در سطح اعتماد 2 (عضو رسمی)'
-          leader: 'کاربران در سطح اعتماد 3 (منظم)'
+          leader: 'کاربران در سطح اعتماد 3 (ناظم)'
           elder: 'کاربران در سطح اعتماد 4 (رهبر)'
           staff: "مدیر"
           admins: 'کاربران مدیر'
@@ -1954,10 +1965,10 @@ fa_IR:
           name: اساسی
           description: <a href="http://discours.ir/t/topic/98">اعطا کردن</a> تمام عملکرد های ضروری برای انجمن
         member:
-          name: اعضا
+          name: عضو
           description: <a href="http://discours.ir/t/topic/98">اعطا کردن</a> دعوت نامه
         regular:
-          name: منظم
+          name: ناظم
           description: '<a href="http://discours.ir/t/topic/98">اعطا کردن</
 
             a> دعوت نامه تغییر دسته بندی، تغییر نام دهید، به دنبال کردن لینک ها و سالن'
