@@ -249,6 +249,7 @@ fa_IR:
       topics: "موضوعات"
       latest: "آخرین"
       latest_by: "آخرین توسط"
+      toggle_ordering: "ضامن کنترل مرتب سازی"
       subcategories: "زیر دسته‌ بندی ها"
       topic_stats: "شمار موضوعات تازه."
       topic_stat_sentence:
@@ -356,6 +357,7 @@ fa_IR:
         uploaded_avatar_empty: "افزودن تصویر شخصی"
         upload_title: "تصویرتان را بار بگذارید"
         upload_picture: "بارگذاری تصویر"
+        image_is_not_a_square: "اخطار : ما تصویر شما بریدیم;طول و عرض برابر نبود"
       change_profile_background:
         title: "پس‌زمینه نمایه"
         instructions: "تصاویر پس‌زمینه نمایه‌ها در مرکز قرار میگیرند و به صورت پیش‌فرض طول 850px دارند."
@@ -661,11 +663,14 @@ fa_IR:
         label: "بستن خودکار موضوع در زمان :"
         error: "لطفا یک مقدار معتبر وارد نمایید."
         based_on_last_post: "آیا تا آخرین نوشته یک موضوع بسته نشده در این قدیمی است."
+        all:
+          examples: 'عدد ساعت را وارد نمایید (24)،زمان کامل (17:30) یا برچسب زمان (2013-11-22 14:00).'
         limited:
           units: "(# از ساعت ها)"
           examples: 'لطفا عدد ساعت را وارد نمایید (24).'
     notifications:
       title: "اطلاع رسانی با اشاره به @name ،پاسخ ها به نوشته ها و موضوعات شما،پیام ها ، و ..."
+      none: "قادر به بار گذاری آگاه سازی ها در این زمان نیستیم."
       more: "دیدن آگاه‌سازی‌های پیشن"
       total_flagged: "همهٔ دیدگاه‌های پرچم خورده"
       mentioned: "<i title='mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -676,6 +681,7 @@ fa_IR:
       liked: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
       private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
       invited_to_private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
+      invited_to_topic: "<i title='invited to topic' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
       invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> accepted your invitation</p>"
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
       linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -688,6 +694,8 @@ fa_IR:
       remote_tip: "لینک به تصویر"
       remote_tip_with_attachments: "لطفا لینک تصویر یا فایل ({{authorized_extensions}})"
       local_tip: "بفشارید تا تصویری را از روی دستگاه خود برگزینید"
+      local_tip_with_attachments: "برای انتخاب یک تصویر یا فایل از دستگاه خود کلیک کنید ({{authorized_extensions}})"
+      hint: "(برای آپلود می توانید فایل را کیشده و در ویرایشگر رها کنید)"
       hint_for_supported_browsers: "(شما همچنین می توانید با کشیدن و رها کردن یا چسباندن تصاویر در ویرایشگر آن ها را بار گذاری نمایید)"
       uploading: "در حال بروز رسانی "
       image_link: "به لینک تصویر خود اشاره کنید"
@@ -706,6 +714,7 @@ fa_IR:
     current_user: 'به نمایه‌تان بروید'
     topics:
       bulk:
+        reset_read: "تنظیم مجدد خوانده شده"
         delete: "حذف موضوعات"
         dismiss_posts: "بستن نوشته ها"
         dismiss_topics: "بستن موضوعات"
@@ -718,7 +727,7 @@ fa_IR:
         notification_level: "تغییر سطح آگاه‌سازی"
         choose_new_category: "یک دسته بندی جدید برای موضوع انتخاب نمایید"
         selected:
-          other: "شما تعداد  <b>{{count}}</b> نوشته را انتخاب کرده اید"
+          other: "شما تعداد <b>{{count}}</b> موضوع را انتخاب کرده اید."
       none:
         unread: "موضوع خوانده نشده‌ای ندارید."
         new: "شما هیچ موضوع تازه‌ای ندارید"
@@ -730,6 +739,9 @@ fa_IR:
         category: "هیچ موضوعاتی در {{category}} نیست."
         top: "برترین موضوعی وجود ندارد"
         search: "دیگر هیچ نتیجه جستجویی وجود ندارد."
+        educate:
+          new: '<p>موضوعات جدید در اینجا قرار می گیرند.</p><p>به طور پیش فرض، موضوعات جدید در نظر گرفته خواهند شد و نشان داده می شوند <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">جدید</span> شاخص اگر آنها در 2 روز گذشته ایجاد شده باشند days.</p><p>شما می توانید این را برای خود تغییر دهید <a href="%{userPrefsUrl}">تنظیمات</a>.</p>'
+          unread: '<p>موضوعات خوانده نشده شما در اینجا قرار می گیرند.</p><p>به طور پیش فرض، موضوعات خوانده نشده در نظر گرفته خواهند شد و شمارش خوانده نشده ها نشان داده می شود <span class="badge new-posts badge-notification">1</span> اگر شما:</p><ul><li>موضوع ایجاد کرده اید</li><li>به موضوع پاسخ داده اید</li><li>خواندن موضوع  در بیش از 4 دقیقه</li></ul><p>و یا اگر شما به صراحت مجموعه ای از موضوع مورد ردیابی و یا تماشا از طریق کنترل اطلاع رسانی در پایین هر موضوع انتخاب کرده اید.</p><p>شما می توانید این را تغییر دهید. <a href="%{userPrefsUrl}">تنظیمات</a>.</p>'
       bottom:
         latest: "موضوع تازهٔ دیگری نیست."
         hot: "موضوع داغ دیگری نیست."
@@ -768,6 +780,8 @@ fa_IR:
         other: "شما تعداد {{count}} نوشته خوانده نشده در این موضوع دارید"
       unread_posts:
         other: "شما تعداد {{count}} نوشته خوانده نشده قدیمی در این موضوع دارید"
+      new_posts:
+        other: "تعداد {{count}} نوشته های جدید در این موضوع از آخرین خواندن شما وجود دارد"
       likes:
         other: "{{count}} پسند در این موضوع داده شده است"
       back_to_list: "بازگشت به فهرست موضوع"
@@ -862,6 +876,8 @@ fa_IR:
         pin_note: "کاربران می توانند موضوع را بصورت جداگانه برای خود از سنجاق در بیاورند"
         already_pinned:
           zero: "دیگر هیچ موضوعات سنجاق شده وجود ندارد در {{categoryLink}}."
+          one: "موضوعات در حال حاضر به صورت سراسری سنجاق شده اند {{categoryLink}}: <strong class='badge badge-notification unread'>1</strong>."
+          other: "موضوعات در حال حاضر به صورت سراسری سنجاق شده اند {{categoryLink}}: <strong class='badge badge-notification unread'>{{count}}</strong>."
         unpin_globally: "حذف این موضوع انجمن از بالای همه لیست موضوعات"
         global_pin_note: "کاربران می توانند موضوع را بصورت جداگانه برای خود از سنجاق در بیاورند"
         already_pinned_globally:
@@ -919,10 +935,12 @@ fa_IR:
         select_all: انتخاب همه
         deselect_all: عدم انتخاب همه
         description:
-          other: شما <b>{{count}}</b> نوشته انتخاب کرده اید
+          other: شما تعداد <b>{{count}}</b> نوشته انتخاب کرده اید
     post:
+      reply: "در حال پاسخ به {{link}} {{replyAvatar}} {{username}}"
       reply_topic: "پاسخ به {{link}}"
       quote_reply: "پاسخ با نقل‌قول"
+      edit: "در حال ویرایش {{link}} {{replyAvatar}} {{username}}"
       edit_reason: "دلیل:"
       post_number: "نوشته {{number}}"
       in_reply_to: "پاسخ به"
@@ -1116,6 +1134,7 @@ fa_IR:
       images: "تصاویر"
       auto_close_label: "بسته شدن خودکار موضوعات پس از:"
       auto_close_units: "ساعت ها"
+      email_in: "آدرس ایمیل های دریافتی سفارشی:"
       email_in_disabled: "ارسال پست با رایانامه در تنظیمات سایت غیر فعال است. برای فعال سازی ارسال موضوع با ایمیل, "
       email_in_disabled_click: 'فعال کردن تنظیمات "email in".'
       allow_badges_label: "اجازی برای اهداء مدال در این دسته بندی"
@@ -1145,6 +1164,7 @@ fa_IR:
       yes_delete_spammer: "بله، پاک‌کردن هرزنگار"
       ip_address_missing: "(N/A)"
       hidden_email_address: "(مخفی)"
+      submit_tooltip: "ایجاد پرچم خصوصی"
       cant: "متأسفیم، در این زمان نمی‌توانید روی این دیدگاه بگذارید."
       formatted_name:
         off_topic: "آن موضوع قدیمی است"
@@ -1278,6 +1298,7 @@ fa_IR:
         last_updated: "آخرین به‌روزرسانی پیش‌خوان"
         version: "نسخه"
         up_to_date: "شما به روز هستید!"
+        critical_available: "به روز رسانی حیاتی در دسترس است."
         updates_available: "بروز رسانی در درسترس است."
         please_upgrade: "لطفا ارتقاء دهید!"
         no_check_performed: "بررسی برای بروزرسانی انجام نشد. از اجرای  sidekiq اطمینان حاصل کنید."
@@ -1321,17 +1342,24 @@ fa_IR:
         old: "قدیمی"
         active: "فعال"
         agree: "موافقت کردن"
+        agree_title: "تایید این پرچم به عنوان معتبر و صحیح"
         agree_flag_modal_title: "موافقت کردن و ..."
         agree_flag_hide_post: "موافقت با (مخفی کردن نوشته + ارسال پیام خصوصی)"
         agree_flag_restore_post: "موافقم (بازگرداندی نوشته)"
         agree_flag_restore_post_title: "بازگردانی این نوشته"
         agree_flag: "موافقت با نشانه گذاری"
+        agree_flag_title: "موافقت با پرچم و نگه داشتن نوشته بدون تغییر"
         defer_flag: " واگذار کردن"
+        defer_flag_title: "خذف این پرچم،بدون نیاز به اقدام در این زمان"
         delete: "حذف"
+        delete_title: "حذف پرچم نوشته و اشاره به."
+        delete_post_defer_flag: "حذف نوشته و  رها کردن پرچم"
+        delete_post_agree_flag: "حذف نوشته و موافقت با پرچم"
         delete_flag_modal_title: "حذف و..."
         delete_spammer: "حذف اسپمر"
         disagree_flag_unhide_post: "مخالفم (با رویت نوشته)"
         disagree_flag: "مخالف"
+        disagree_flag_title: "انکار این پرچم به عنوان نامعتبر است و یا نادرست"
         clear_topic_flags: "تأیید"
         clear_topic_flags_title: "موضوع بررسی و موضوع حل شده است. تأیید را بفشارید تا پرچم‌ها برداشته شوند."
         more: "(پاسخ های بیشتر...)"
@@ -1339,7 +1367,7 @@ fa_IR:
           agreed: "موافقت شد"
           disagreed: "مخالفت شد"
           deferred: "دیرفرست"
-        flagged_by: "مخابره شده توسط"
+        flagged_by: "پرچم شده توسط"
         resolved_by: "حل شده توسط"
         system: "سیستم"
         error: "اشتباهی روی داد"
@@ -1348,6 +1376,7 @@ fa_IR:
         topic_flagged: "این <strong>موضوع</strong> پرچم خورده است."
         visit_topic: "برای اقدام لازم، موضوع را ببینید"
         was_edited: "نوشته پس از پرچم اول ویرایش شد"
+        previous_flags_count: "این موضوع در حال حاضر چندین با {{count}} پرچم گذاری شده است."
         summary:
           action_type_3:
             other: "موضوعات غیرفعال x{{count}}"
@@ -1378,12 +1407,14 @@ fa_IR:
         automatic: "خودکار"
       api:
         generate_master: "ایجاد کلید اصلی API"
+        none: "هم اکنون هیچ کلید API فعالی وجود ندارد"
         user: "کاربر"
-        title: "API"
+        title: " رابط برنامه های کاربردى"
         key: "کلید API"
         generate: "تولید کردن"
         regenerate: "احیاء کردن"
         revoke: "لغو کردن"
+        confirm_regen: "آیا می خواهید API موجود را با یک API جدید جایگزین کنید؟"
         info_html: "موضوعات تازه پس از آخرین بازدید شما"
         all_users: "همه کاربران"
       plugins:
@@ -1687,6 +1718,8 @@ fa_IR:
         log_out: "خروج"
         revoke_admin: 'لغو مدیریت'
         grant_admin: 'اعطای مدیریت'
+        revoke_moderation: 'پس گرفتن مدیریت'
+        grant_moderation: 'اعطای مدیریت'
         unblock: 'قفل کردن'
         block: 'عقب'
         reputation: ' سابقه'
@@ -1698,6 +1731,10 @@ fa_IR:
         posts_read_count: خواندن نوشته ها
         post_count: پست ایجاد شده
         topics_entered: بازدید موضوعات
+        flags_given_count: پرچم های ارسالی
+        flags_received_count: پرچم های دریافتی
+        warnings_received_count: اخطار های دریافتی
+        flags_given_received_count: 'پرچم های  ارسالی / دریافتی'
         approve: 'تصویب'
         approved_by: "تصویب شده توسط"
         anonymize: "کاربر ناشناس"
@@ -1849,6 +1886,7 @@ fa_IR:
         no_user_badges: "%{name} هیچ مدالی دریافت نکرده است."
         no_badges: مدالی برای اعطا کردن وجود ندارد.
         none_selected: "برای شروع یک مدال رو انتخاب کنید"
+        multiple_grant: نمی توان چندین با اهداء کرد
         enabled: به‌کارگیری مدال
         icon: آیکن
         image: تصویر
@@ -1926,7 +1964,7 @@ fa_IR:
         reply_post: '<b>r</b> پاسخ به دیدگاه'
         quote_post: 'نقل‌قول دیدگاه'
         like: '<b>l</b> پسندیدن دیدگاه'
-        flag: '<b>!</b> پرچم‌گذاری دیدگاه'
+        flag: '<b>!</b> پرچم‌گذاری نوشته'
         bookmark: '<b>b</b> نشانک‌گذاری دیدگاه'
         edit: '<b>e</b> ویرایش دیدگاه'
         delete: '<b>d</b> پاک کردن دیدگاه'
@@ -1943,7 +1981,7 @@ fa_IR:
       more_badges:
         other: "+%{count} بیش‌تر"
       granted:
-        other: "٪ {COUNT} اعطا شد"
+        other: "%{count} اعطا شد"
       select_badge_for_title: انتخاب یک مدال برای استفاده در عنوان خود
       none: "<none>"
       badge_grouping:
@@ -2018,7 +2056,7 @@ fa_IR:
           description: دیدگاهی را پسندید
         first_flag:
           name: پرچم نخست
-          description: دیدگاهی را پرچم زد
+          description: نوشته را پرچم زد
         first_share:
           name: نخستین اشتراک‌گذاری
           description: دیدگاهی به اشتراک گذاشت
