@@ -415,7 +415,20 @@ fa_IR:
       name_already_exists: "متأسفیم، در حال حاضر نام '{name}%' توسط ایموجی دیگری استفاده می‌شود."
       error_while_storing_emoji: "متأسفیم، در هنگام ذخیره‌سازی ایموجی خطایی رخ داده است."
   topic_statuses:
+    closed_enabled: "این موضوع در حال حاضر بسته شده است. پاسخ جدید دیگر مجاز نیست."
     closed_disabled: "موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
+    autoclosed_enabled_days:
+      other: "این موضوع به صورت خود کار بعد از %{count} روز بسته شد. پاسخ جدید دیگر مجاز نیست."
+    autoclosed_enabled_hours:
+      other: "این موضوع به صورت خود کار بعد از %{count} ساعت بسته شد. پاسخ جدید دیگر مجاز نیست."
+    autoclosed_enabled_minutes:
+      other: "این موضوع به صورت خود کار بعد از %{count} دقیقه بسته شد. پاسخ جدید دیگر مجاز نیست."
+    autoclosed_enabled_lastpost_days:
+      other: "این موضوع به صورت خود کار بعد از %{count} روز بعد از آخرین پاسخ بسته شد. پاسخ جدید دیگر مجاز نیست."
+    autoclosed_enabled_lastpost_hours:
+      other: "این موضوع به صورت خود کار بعد از %{count} ساعت بعد از آخرین پاسخ بسته شد. پاسخ جدید دیگر مجاز نیست."
+    autoclosed_enabled_lastpost_minutes:
+      other: "این موضوع به صورت خود کار بعد از %{count} دقیقه بعد از آخرین پاسخ بسته شد. پاسخ جدید دیگر مجاز نیست."
     autoclosed_disabled: "این موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
     autoclosed_disabled_lastpost: "این موضوع اکنون باز است. پاسخ‌های جدید اجازه‌ی ثبت دارند."
   login:
@@ -844,7 +857,7 @@ fa_IR:
       This document is CC-BY-SA. It was last updated May 31, 2013.
   static:
     search_help: |
-      <h2>Tips</h2>
+      <h2>راهنمایی</h2>
       <p>
       <ul>
         <li>Title matches are prioritized, so when in doubt, search for titles</li>
