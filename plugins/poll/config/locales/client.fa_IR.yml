@@ -1,29 +1,37 @@
-# encoding: utf-8
-# This file contains content for the client portion of Discourse, sent out
-# to the Javascript app.
-#
-# To work with us on translations, see:
-# https://www.transifex.com/projects/p/discourse-org/
-#
-# This is a "source" file, which is used by Transifex to get translations for other languages.
-# After this file is changed, it needs to be pushed by a maintainer to Transifex:
-#
-#   tx push -s
-#
-# Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
-#
-# To validate this YAML file after you change it, please paste it into
-# 
-# Persian language translate By http://discours.ir
-# http://yamllint.com/
 fa_IR:
   js:
     poll:
-      voteCount:
-        other: "%{count} آرا"
-      results:
-        show: نمایش نتایج
-        hide: پنهان کرد نتایج
-      close_poll: "بستن نظرسنجی"
-      open_poll: "باز کردن نظرسنجی"
-
+      voters:
+        zero: "رای دهدنگاه"
+        one: "رای دهنده"
+        other: "رای دهندگان"
+      total_votes:
+        zero: "تمامی آراء"
+        one: "تمام رای"
+        other: "تمامی آراء"
+      average_rating: "میانگین امتیاز:  <strong>%{average}</strong>."
+      multiple:
+        help:
+          at_least_min_options: "You may choose at least <strong>%{count}</strong> options."
+          up_to_max_options: "You may choose up to <strong>%{count}</strong> options."
+          x_options: "You may choose <strong>%{count}</strong> options."
+          between_min_and_max_options: "You may choose between <strong>%{min}</strong> and <strong>%{max}</strong> options."
+      cast-votes:
+        title: "انداختن رأی شما"
+        label: "رای بدهید!"
+      show-results:
+        title: "نتایج نظرسنجی را نمایش بده"
+        label: "نتایج را نشان بده"
+      hide-results:
+        title: "برگشتن به رای گیری "
+        label: "نتایج را مخفی کن "
+      open:
+        title: "نظرسنجی را باز کن "
+        label: "باز"
+        confirm: "آیا از باز کردن این نظرسنجی اطمینان دارید ؟ "
+      close:
+        title: "نظرسنجی را ببند"
+        label: "بسته "
+        confirm: "آیا از بستن این نظرسنجی اطمینان دارید ؟ "
+      error_while_toggling_status: "خطایی رخ داد در حالی که وضعیت این نظرسنجی روشن نیست."
+      error_while_casting_votes: "خطایی رخ داد در حالی که شما رای می دادید."
