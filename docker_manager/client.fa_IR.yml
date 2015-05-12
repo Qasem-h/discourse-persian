@@ -17,5 +17,5 @@
 fa_IR:
   js:
     docker:
-      upgrade: "دیسکورس نصب شده شما به روز نیست."
+      upgrade: "Discourse نصب شده شما به روز نیست."
       perform_upgrade: "برای بروز رسانی اینجا کلیک کنید."
